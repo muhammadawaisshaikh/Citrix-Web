@@ -137,7 +137,7 @@ a{
     width: 0;
     position: fixed;
     z-index: 1;
-    top: 63px;
+    top: 0;
     left: 0;
     background-color: #111;
     overflow-x: hidden;
@@ -247,13 +247,14 @@ a{
 
 @media screen and (max-width: 600px)
 {
+
 .toggleMenu {
     display: block;
 }
 
 .mobile-nav
 {
-    display: none;
+    display: block;
 }
 
 .top-bar .nav
@@ -266,36 +267,11 @@ a{
     display: none;
 }
 
-.sidenav
-{
-    background-color: #71b85f;
-}
-
-.sidenav a
+/* .sidenav a
 {
     font-size: 18px;
     text-align: unset;
     padding-top: 10%;
-}
-
-/* .top-bar .logo img
-{
-    width: 35%;
-    height: 45px;
-    margin-left: 15%;
-}
-
-.top-bar .oder a
-{
-    top: unset;
-    right: 5%;
-    bottom: -2px;
-}
-
-.top-bar .oder i
-{
-    padding: 10px;
-    font-size: 30px;
 } */
 
 }
