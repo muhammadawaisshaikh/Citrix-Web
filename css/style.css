@@ -1,0 +1,319 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+:root {
+    --red: #ec0000;
+    --golden: #feca05;
+    --blue: #252259;
+    --white: #ffffff;
+}
+
+
+body
+{
+    font-family: 'Roboto', sans-serif !important;
+    overflow-x: hidden;
+    margin-bottom: 0 auto;
+    background: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p, h1 ,h2 ,h3, h4, h5, h6 {
+    margin: 0 !important;
+}
+
+.all-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.top-bar
+{
+    background-color: var(--white);
+    padding: 1% 0;
+}
+
+.top-bar .logo
+{
+    
+}
+
+.top-bar .logo span
+{
+    padding: 0 7px;
+    font-size: 16px;
+}
+
+.top-bar .logo span:hover
+{
+    color: var(--golden);
+    opacity: 0.5s;
+    transition: 0.5s;
+}
+
+.top-bar .logo img
+{
+    width: 50%;
+    height: auto;
+}
+
+.top-bar .nav
+{
+    margin-top: 4%;
+}
+
+.top-bar .nav ul
+{
+    display: flex;
+    list-style: none;
+}
+
+.top-bar .nav li a
+{ 
+    font-size: 17px;
+    padding: 0px 13px;
+    color: black;
+}
+
+.top-bar .press
+{
+    margin-top: 15%;
+}
+
+.top-bar .press a
+{
+    color:  var(--white);
+    font-size: 15px;
+    border: 1px solid var(--red);
+    background-color: var(--red);
+    border-radius: 4px;
+    padding: 12px 17px 12px 17px;
+    box-shadow: 1px 2px 3px grey;
+}
+
+.top-bar .press a:hover
+{
+    background-color:  var(--white);
+    color: var(--red);
+    opacity: 0.5s;
+    transition: 0.5s;
+}
+
+/* dropdown buttn */
+.dropdown 
+{
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a 
+{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.parent li>a:hover  .dropdown-content {display: block;}
+
+.sidenav 
+{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 63px;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidenav.active 
+{
+    width: 70%;
+}
+      
+.sidenav a 
+{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+}
+      
+.sidenav a:hover 
+{
+    color: black;
+}
+
+/* X menu btn */
+.bar1, .bar2, .bar3 
+{
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+  
+.change .bar1 
+  
+{
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+  
+.change .bar2 {opacity: 0;}
+  
+.change .bar3 
+{
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.toggleMenu 
+{
+    position: absolute;
+    top: 15px;
+    left: 4%;
+    z-index: 1;
+    display: none;
+}
+
+.seprator
+{
+    background-color: #707070;
+    width: 100%;
+    height: 1px;
+}
+      
+@media screen and (max-height: 450px) 
+{
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.mobile-nav
+{
+    display: none;
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1920px)
+{
+
+}
+
+@media screen and (max-width: 1366px)
+{
+    
+}
+
+@media screen and (max-width: 768px)
+{
+   
+}
+
+@media screen and (max-width: 600px)
+{
+.toggleMenu {
+    display: block;
+}
+
+.mobile-nav
+{
+    display: none;
+}
+
+.top-bar .nav
+{
+    display: none;
+}
+
+.top-bar .press a
+{
+    display: none;
+}
+
+.sidenav
+{
+    background-color: #71b85f;
+}
+
+.sidenav a
+{
+    font-size: 18px;
+    text-align: unset;
+    padding-top: 10%;
+}
+
+/* .top-bar .logo img
+{
+    width: 35%;
+    height: 45px;
+    margin-left: 15%;
+}
+
+.top-bar .oder a
+{
+    top: unset;
+    right: 5%;
+    bottom: -2px;
+}
+
+.top-bar .oder i
+{
+    padding: 10px;
+    font-size: 30px;
+} */
+
+}
+
+@media screen and (max-width: 425px)
+{
+    
+}
+
+@media screen and (max-width: 375px)
+{
+    
+}
+
+
+
+
+
+
+
+
