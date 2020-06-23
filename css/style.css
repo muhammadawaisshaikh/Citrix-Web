@@ -5,6 +5,7 @@
     --golden: #feca05;
     --blue: #252259;
     --white: #ffffff;
+    --black: #000000;
 }
 
 
@@ -13,7 +14,7 @@ body
     font-family: 'Roboto', sans-serif !important;
     overflow-x: hidden;
     margin-bottom: 0 auto;
-    background: #f2f2f2;
+    background-color: var(--white);
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -133,36 +134,38 @@ a{
 
 .sidenav 
 {
+    padding-top: 15%;
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 0;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: var(--white);
     overflow-x: hidden;
     transition: 0.5s;
 }
 
 .sidenav.active 
 {
-    width: 70%;
+    width: 100%;
 }
       
 .sidenav a 
 {
-    padding: 8px 8px 8px 32px;
+    padding: 0px 0px 0px 40px;
+    border-bottom: 1px solid #e9e9e9;
     text-decoration: none;
     font-size: 25px;
-    color: #fff;
+    color: var(--black);
     display: block;
     transition: 0.3s;
-    text-align: center;
+    /* text-align: center; */
 }
       
 .sidenav a:hover 
 {
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 /* X menu btn */
@@ -170,7 +173,7 @@ a{
 {
     width: 35px;
     height: 5px;
-    background-color: white;
+    background-color: var(--black);
     margin: 6px 0;
     transition: 0.4s;
 }
@@ -258,6 +261,19 @@ a{
 }
 
 .top-bar .nav
+{
+    display: none;
+}
+
+.top-bar .logo img 
+{
+    width: 90px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.top-bar .logo span
 {
     display: none;
 }
