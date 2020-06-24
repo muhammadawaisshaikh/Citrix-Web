@@ -6,15 +6,15 @@
     --blue: #252259;
     --white: #ffffff;
     --black: #000000;
+    --lightgry: #e0e0e0;
 }
-
 
 body
 {
     font-family: 'Roboto', sans-serif !important;
     overflow-x: hidden;
     margin-bottom: 0 auto;
-    background-color: var(--white);
+    background-color: #f2f2f2;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -134,13 +134,13 @@ a{
 
 .sidenav 
 {
-    padding-top: 15%;
+    padding-top: 10%;
     height: 100%;
-    width: 0;
+    width: 100%;
     position: fixed;
     z-index: 0;
-    top: 0;
-    left: 0;
+    top: 70;
+    left: -100%;
     background-color: var(--white);
     overflow-x: hidden;
     transition: 0.5s;
@@ -148,15 +148,15 @@ a{
 
 .sidenav.active 
 {
-    width: 100%;
+    left: 0;
 }
       
 .sidenav a 
 {
-    padding: 0px 0px 0px 40px;
+    padding: 0px 0px 0px 30px;
     border-bottom: 1px solid #e9e9e9;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 18px;
     color: var(--black);
     display: block;
     transition: 0.3s;
@@ -245,11 +245,19 @@ a{
 
 @media screen and (max-width: 768px)
 {
-   
+
+.top-bar .logo img 
+{
+    width: 90px;
+    height: auto;
+    display: block;
+    margin: auto;
 }
 
-@media screen and (max-width: 600px)
+.top-bar .logo span
 {
+    display: none;
+}
 
 .toggleMenu {
     display: block;
@@ -265,30 +273,23 @@ a{
     display: none;
 }
 
-.top-bar .logo img 
-{
-    width: 90px;
-    height: auto;
-    display: block;
-    margin: auto;
-}
-
-.top-bar .logo span
-{
-    display: none;
-}
-
 .top-bar .press a
 {
     display: none;
 }
 
-/* .sidenav a
+.top-bar .mobile-nav .press a
 {
-    font-size: 18px;
-    text-align: unset;
-    padding-top: 10%;
-} */
+    display: block;
+}
+
+   
+}
+
+@media screen and (max-width: 600px)
+{
+
+
 
 }
 
