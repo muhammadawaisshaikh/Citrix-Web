@@ -434,6 +434,7 @@ a{
 .provide .wrapper
 {
     height: 160px;
+    border-left: 6px solid red;
     margin-top: 5%;
     border: 1px solid white;
     padding: 5% 3%;
@@ -500,6 +501,101 @@ a{
 
 .provide .looking .press2 a:hover
 {
+    background-color:  var(--white);
+    color: var(--red);
+    opacity: 0.5s;
+    transition: 0.5s;
+}
+
+.explore
+{
+    padding: 5% 0;
+}
+
+.explore h3
+{
+    text-align: center;
+    font-size: 35px;
+}
+
+.explore .main
+{
+    margin-top: 15%;
+    height: 540px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 1px 5px grey;
+}
+
+.explore .main .image3 img
+{ 
+    width: 100%;
+    height: 250px;
+}
+
+.explore .main .wrappers
+{
+    padding: 8% 5%;
+}
+
+.explore .main .wrappers h6
+{
+    color: red;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.explore .main .wrappers h4
+{
+    padding-top: 10%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.explore .main .wrappers .press2
+{
+    margin-top: 15%;
+}
+
+.explore .main .wrappers .press2 a
+{
+    color: var(--white);
+    font-size: 14px;
+    border: 1px solid var(--red);
+    background-color: var(--red);
+    border-radius: 4px;
+    padding: 10px 17px 10px 17px;
+    box-shadow: 1px 2px 3px grey;
+}
+
+.explore .main .wrappers .press2 a:hover
+{
+    background-color:  var(--white);
+    color: var(--red);
+    opacity: 0.5s;
+    transition: 0.5s;
+}
+
+.explore .press3
+{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.explore .press3 a
+{
+    color: var(--white);
+    font-size: 16px;
+    border: 1px solid var(--red);
+    background-color: var(--red);
+    border-radius: 4px;
+    padding: 12px 17px 12px 17px;
+    box-shadow: 1px 2px 3px grey;
+}
+
+.explore .press3 a:hover
+{
+    
     background-color:  var(--white);
     color: var(--red);
     opacity: 0.5s;
@@ -707,6 +803,16 @@ a{
 .provide .looking .press2
 {
     margin-top: 10%;
+}
+
+.explore
+{
+    padding: 8% 0;
+}
+
+.explore h3
+{
+    font-size: 27px;
 }
 
 
