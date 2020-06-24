@@ -376,6 +376,46 @@ a{
     margin: auto;
 }
 
+.number
+{
+    text-align: center;
+    background-color: red;
+    padding: 3% 0;
+}
+
+.number h3
+{
+    font-size: 30px;
+    color: white;
+
+}
+
+.number .main
+{
+    border-right: 1px solid #22bdbf;
+}
+
+.number .main.no-border
+{
+    border-right: 0;
+}
+
+.number .main h6
+{
+    color: var(--golden);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.number .main h4
+{
+    color: white;
+    font-size: 23px;
+}
+
+
+
+
 
 
 
@@ -524,6 +564,15 @@ a{
 @media screen and (max-width: 600px)
 {
 
+.number
+{
+    padding: 5% 0;
+}
+
+.number .main
+{
+    border-right: 0;
+}
 
 
 }
