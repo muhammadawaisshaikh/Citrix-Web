@@ -392,7 +392,7 @@ a{
 
 .number .main
 {
-    border-right: 1px solid #22bdbf;
+    border-right: 2px solid var(--golden);
 }
 
 .number .main.no-border
@@ -412,6 +412,100 @@ a{
     color: white;
     font-size: 23px;
 }
+
+.provide
+{
+    background-color: white;
+    padding: 5% 0;
+}
+
+.provide h3
+{
+    text-align: center;
+    font-size: 35px;
+    color: black;
+}
+
+.provide span
+{
+    color: gold;
+}
+
+.provide .wrapper
+{
+    height: 160px;
+    margin-top: 5%;
+    border: 1px solid white;
+    padding: 5% 3%;
+    margin-left: 0px;
+    border-radius: 5px;
+    box-shadow: 2px 1px 5px grey;
+}
+
+.provide .wrapper .image2 img
+{
+    width: 100%;
+    height: auto;
+}
+
+.provide .wrapper .main 
+{
+    margin-top: 4%;
+}
+
+.provide .wrapper .main h6
+{
+    font-size: 23px;
+}
+
+.provide .wrapper p
+{
+    padding-left: 3%;
+    font-size: 15px;
+}
+
+.provide .looking
+{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.provide .looking h3
+{
+    color: red;
+    font-size: 35px;
+}
+
+.provide .looking p
+{
+    color: black;
+    padding: 1% 23% 0 23%;
+}
+
+.provide .looking .press2
+{
+    margin-top: 5%;
+}
+
+.provide .looking .press2 a
+{
+    color:  var(--white);
+    font-size: 15px;
+    border: 1px solid var(--red);
+    background-color: var(--red);
+    border-radius: 4px;
+    padding: 12px 17px 12px 17px;
+    box-shadow: 1px 2px 3px grey;
+}
+
+.provide .looking .press2 a:hover
+{
+    background-color:  var(--white);
+    color: var(--red);
+    opacity: 0.5s;
+    transition: 0.5s;
+}
+
 
 
 
@@ -558,6 +652,11 @@ a{
     font-size: 18px;
 }
 
+.provide h3
+{
+    font-size: 30px;
+}
+
    
 }
 
@@ -572,6 +671,42 @@ a{
 .number .main
 {
     border-right: 0;
+}
+
+.provide
+{
+    padding: 8% 0;
+}
+
+.provide h3
+{
+    font-size: 25px;
+}
+
+.provide .wrapper
+{
+    width: 100%;
+    height: auto;
+}
+
+.provide .wrapper .main
+{
+    margin-top: 7%;
+}
+
+.provide .looking h3
+{
+    font-size: 23px;
+}
+
+.provide .looking p
+{
+    padding: 1% 6% 0 6%;
+}
+
+.provide .looking .press2
+{
+    margin-top: 10%;
 }
 
 
