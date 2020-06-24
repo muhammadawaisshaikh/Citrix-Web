@@ -265,6 +265,7 @@ a{
     border: 1px solid var(--red);
     background-color: var(--red);
     border-radius: 4px;
+    margin-right: 10px;
     padding: 12px 17px 12px 17px;
     box-shadow: 1px 2px 3px grey;
 }
@@ -280,11 +281,6 @@ a{
 .slider .wrapper
 {
     background-color: red;
-}
-
-.slider .wrapper .image
-{
-    
 }
 
 .slider .wrapper .image img
@@ -304,6 +300,80 @@ a{
 .slider .heading .text p
 {
     font-size: 15px;
+}
+
+.partner
+{
+    padding: 5% 0;
+}
+
+.partner h6
+{
+    text-align: center;
+    font-size: 17px;
+}
+
+.partner .image1
+{
+    margin-top: 5%;
+}
+
+.partner .image1 img
+{
+    width: 100%;
+    height: auto;
+}
+
+.partner h3
+{ 
+    text-align: center;
+    font-size: 40px;
+    padding: 5% 5% 0 5%;
+    color: red;
+}
+
+.partner p
+{
+    font-size: 18px;
+    text-align: center;
+    padding-top: 3%
+}
+
+.partner .main
+{
+    background-color: white;
+    padding: 7%;
+    margin-top: 10%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px grey;
+    border-top: 6px solid red;
+    margin: 10% 0 0 0;
+}
+
+.partner h4
+{
+    text-align: center;
+    font-size: 25px;
+    padding-top: 10%;
+}
+
+.partner .main p
+{
+    font-size: 17px;
+    text-align: unset;
+    color: gray;
+}
+
+.partner .main h5
+{
+    font-size: 20px;
+}
+
+.partner .main i
+{
+    font-size: 25px;
+    display: block;
+    margin: auto;
 }
 
 
@@ -414,6 +484,38 @@ a{
 .slider .wrapper
 {
     display: none;
+}
+
+.partner
+{
+    padding: 8% 0;
+}
+
+.partner h3
+{
+    font-size: 35px;
+    padding: 5% 3% 0 3%;
+}
+
+.partner p
+{
+    font-size: 15px;
+    padding-top: 5%;
+}
+
+.partner .main h5
+{
+    font-size: 14px;
+}
+
+.partner .main p
+{
+    font-size: 15px;
+}
+
+.partner .main i
+{
+    font-size: 18px;
 }
 
    
