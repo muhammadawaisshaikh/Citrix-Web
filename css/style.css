@@ -6,7 +6,7 @@
     --blue: #252259;
     --white: #ffffff;
     --black: #000000;
-    --lightgry: #e0e0e0;
+    --lightgry: #f2f2f2;
 }
 
 body
@@ -14,7 +14,7 @@ body
     font-family: 'Roboto', sans-serif !important;
     overflow-x: hidden;
     margin-bottom: 0 auto;
-    background-color: #f2f2f2;
+    background-color: var(--lightgry);
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -138,7 +138,7 @@ a{
     height: 100%;
     width: 100%;
     position: fixed;
-    z-index: 0;
+    z-index: 1;
     top: 70;
     left: -100%;
     background-color: var(--white);
@@ -218,7 +218,124 @@ a{
 .mobile-nav
 {
     display: none;
-}  
+}
+
+.slider
+{
+    background-color: white;
+    
+}
+
+.slider .heading 
+{
+    margin-top: 25%;
+}
+
+.slider .heading h1
+{
+    font-size: 60px;
+    color: red;
+    font-weight: 600;
+}
+
+.slider .heading h6
+{
+    font-size: 17px;
+}
+
+.slider .heading span
+{
+    color: var(--golden);
+}
+
+.slider .heading p
+{
+    font-size: 15px;
+}
+
+.slider .heading .press1
+{
+    margin-top: 7%;
+}
+
+.slider .heading .press1 a
+{
+    color: var(--white);
+    font-size: 17px;
+    border: 1px solid var(--red);
+    background-color: var(--red);
+    border-radius: 4px;
+    padding: 12px 17px 12px 17px;
+    box-shadow: 1px 2px 3px grey;
+}
+
+.slider .heading .press1 a:hover
+{ 
+    background-color:  var(--white);
+    color: var(--red);
+    opacity: 0.5s;
+    transition: 0.5s;
+}
+
+.slider .wrapper
+{
+    background-color: red;
+}
+
+.slider .wrapper .image
+{
+    
+}
+
+.slider .wrapper .image img
+{
+    width: 80%;
+    display: block;
+    margin: auto;
+    height: auto;
+}
+
+.slider .heading .text
+{
+    margin-top: 10%;
+    /* text-align: center; */
+}
+ 
+.slider .heading .text p
+{
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.top-bar .press a
+{
+    color:  var(--white);
+    font-size: 15px;
+    border: 1px solid var(--red);
+    background-color: var(--red);
+    border-radius: 4px;
+    padding: 12px 17px 12px 17px;
+    box-shadow: 1px 2px 3px grey;
+}
+
+.top-bar .press a:hover
+{
+    background-color:  var(--white);
+    color: var(--red);
+    opacity: 0.5s;
+    transition: 0.5s;
+} */
 
 
 
@@ -281,6 +398,22 @@ a{
 .top-bar .mobile-nav .press a
 {
     display: block;
+}
+
+.slider .heading 
+{
+    margin: 10% 0;
+    text-align: center;
+}
+
+.slider .heading h1
+{
+    font-size: 52px;
+}
+
+.slider .wrapper
+{
+    display: none;
 }
 
    
