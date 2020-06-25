@@ -823,25 +823,37 @@ a{
 .require
 {
     padding: 5% 0;
-    text-align: center;
     background-color: white;
 }
 
 .require h5
 {
-    
+    text-align: center;
+    font-size: 30px;
+    color: red;
 }
 
 .require p
 {
-    
+    font-size: 16px;
 }
 
-.require form-check
+.form-check-label
 {
-    
+    font-size: 17px;
+    padding-left: 10px;
 }
 
+input.form-check-input {
+    width: 20px; 
+    height: 20px; 
+}
+
+.require .press6
+{
+    text-align: center;
+    margin-top: 7%;
+}
 
 
 
