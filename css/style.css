@@ -746,6 +746,35 @@ a{
     transition: 0.5s;
 }
 
+.last
+{
+    background-color: red;
+    padding: 1% 0;
+}
+
+.last .left 
+{
+    
+}
+
+.last .left  a 
+{
+    color: var(--white);
+    font-size: 15px;
+    padding-right: 9px;
+}
+
+.last .right
+{
+    float: right;
+}
+
+.last .right p
+{
+    color: var(--white);
+    font-size: 15px;
+}
+
 
 
 
