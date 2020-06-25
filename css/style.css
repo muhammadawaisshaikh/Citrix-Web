@@ -662,6 +662,31 @@ a{
     right: 0;
 }
 
+.tansfer
+{
+    background-color: white;
+    padding: 5% 0;
+}
+
+.tansfer a
+{
+    border-bottom: 3px solid;
+    color: var(--black);
+    font-size: 25px;
+}
+
+.tansfer a:hover
+{
+    color: var(--golden);
+    opacity: 0.5s;
+    transition: 0.5s;
+}
+
+.tansfer p
+{
+    font-size: 17px;
+}
+
 
 
 
@@ -820,6 +845,10 @@ a{
     display: none;
 }
 
+.tansfer p {
+    font-size: 15px;
+}
+
    
 }
 
@@ -903,6 +932,14 @@ a{
 {
     margin-top: 10%;
 }
+
+.tansfer
+{
+    padding: 7% 0;
+    text-align: center;
+}
+
+
 
 
 
