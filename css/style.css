@@ -687,6 +687,65 @@ a{
     font-size: 17px;
 }
 
+.footer
+{
+    padding: 2% 0;
+}
+
+.footer .commitment h6
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer .commitment ul
+{
+    list-style: none;
+    padding: 0;
+}
+
+.footer .commitment li
+{
+    padding-top: 10px;
+}
+
+.footer .commitment a
+{
+    color: black;
+    font-size: 14px;
+}
+
+.footer .commitment a:hover
+{
+    color: var(--red);
+    opacity: 0.5s;
+    transition: 0.5s;
+}
+
+.footer .icon
+{
+    float: right;
+    margin-top: 20%;
+    
+}
+
+.footer .icon i
+{ 
+    font-size: 20px;
+    border: 2px solid;
+    border-radius: 4px;
+    padding: 5px 8px;
+    margin: 0 5px;
+}
+
+.footer .icon i:hover
+{
+    background-color:  var(--white);
+    color: var(--red);
+    opacity: 0.5s;
+    transition: 0.5s;
+}
+
 
 
 
@@ -849,6 +908,11 @@ a{
     font-size: 15px;
 }
 
+.footer .icon {
+    float: right;
+    margin-top: 6%;
+}
+
    
 }
 
@@ -937,6 +1001,11 @@ a{
 {
     padding: 7% 0;
     text-align: center;
+}
+
+.footer
+{
+    padding: 7% 0;
 }
 
 
