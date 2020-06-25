@@ -521,7 +521,7 @@ a{
 .explore .main
 {
     margin-top: 15%;
-    height: 540px;
+    height: 520px;
     background-color: white;
     border-radius: 5px;
     box-shadow: 2px 1px 5px grey;
@@ -601,6 +601,68 @@ a{
     opacity: 0.5s;
     transition: 0.5s;
 }
+
+.ready
+{
+    background-color: red;
+    position: relative;
+    padding: 5% 0;
+}
+
+.ready .first
+{
+    padding: 0% 0 0 0;
+}
+
+.ready .first h6
+{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.ready .first p
+{
+    color: white;
+    font-size: 18px;
+    padding: 10px 15% 0 0%;
+}
+
+.ready .first .press4
+{
+    margin-top: 8%;
+}
+
+.ready .first .press4 a
+{
+    color: var(--white);
+    font-size: 17px;
+    border: 1px solid var(--golden);
+    background-color: var(--golden);
+    border-radius: 4px;
+    padding: 12px 19px 12px 20px;
+    /* box-shadow: 1px 2px 3px grey; */
+    font-weight: bold;
+}
+
+.ready .first .press4 a:hover
+{
+    background-color:  var(--white);
+    color: var(--red);
+    opacity: 0.5s;
+    transition: 0.5s;
+}
+
+.ready .image4 img
+{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: -115%;
+    right: 0;
+}
+
+
 
 
 
@@ -753,6 +815,11 @@ a{
     font-size: 30px;
 }
 
+.ready .image4
+{
+    display: none;
+}
+
    
 }
 
@@ -814,6 +881,30 @@ a{
 {
     font-size: 27px;
 }
+
+.ready
+{
+    padding: 8% 0;
+    text-align: center;
+}
+
+.ready .first h6
+{
+    font-size: 25px;
+}
+
+.ready .first p
+{
+    font-size: 17px;
+    padding: 10px 0% 0 0%;
+}
+
+.ready .first .press4
+{
+    margin-top: 10%;
+}
+
+
 
 
 }
