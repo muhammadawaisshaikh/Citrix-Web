@@ -916,7 +916,46 @@ input.form-check-input {
     padding: 0.60rem .75rem;
 }
 
+.company
+{
+    background-color: white;
+    padding: 5% 0;
+}
 
+.company .main 
+{
+    margin-top: 5%;
+}
+
+.company h6
+{
+    padding: 0 10%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.company .form-control
+{
+    width: 100%;
+    padding: 0.60rem .75rem;
+}
+
+.company .press9
+{
+    margin-top: 5%;
+}
+
+.company .wrapper
+{
+    margin-top: 6%;
+}
+
+.company .press10
+{
+    margin-top: 7%;
+    text-align: center;
+}
 
 
 
@@ -1206,6 +1245,16 @@ input.form-check-input {
 }
 
 .details .press8
+{
+    margin-top: 10%;
+}
+
+.company .press9
+{
+    margin-top: 15%;
+}
+
+.company .wrapper
 {
     margin-top: 10%;
 }
