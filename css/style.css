@@ -904,6 +904,19 @@ input.form-check-input {
     margin-top: 7%;
 }
 
+.additional
+{
+    background-color: white;
+    padding: 5% 0;
+}
+
+.additional .form-control
+{
+    width: 70%;
+    padding: 0.60rem .75rem;
+}
+
+
 
 
 
@@ -1054,6 +1067,11 @@ input.form-check-input {
 {
     font-size: 40px;
     padding: 0 5%;
+}
+
+.additional .form-control
+{
+    width: 100%;
 }
 
    
