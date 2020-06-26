@@ -855,6 +855,39 @@ input.form-check-input {
     margin-top: 7%;
 }
 
+.type
+{
+    text-align: center;
+    background-color: white;
+    padding: 4% 0 7% 0;
+}
+
+.type h5
+{
+    text-align: center;
+    font-size: 30px;
+    color: red;
+}
+
+.type p
+{
+    text-align: left;
+}
+
+.type .form-radio
+{
+    border: 1px solid gold;
+    background-color: gold;
+    padding: 5% 0px;
+}
+
+.type .press7
+{
+    text-align: center;
+    margin-top: 7%;
+}
+
+
 
 
 
@@ -869,7 +902,7 @@ input.form-check-input {
     border: 1px solid var(--red);
     background-color: var(--red);
     border-radius: 4px;
-    padding: 12px 17px 12px 17px;
+    padding: 12px 5% 12px 5%;
     box-shadow: 1px 2px 3px grey;
 }
 
@@ -1130,6 +1163,11 @@ input.form-check-input {
 .starting .press5
 {
     margin-top: 10%;
+}
+
+.type
+{
+    padding: 10% 0;
 }
 
 
