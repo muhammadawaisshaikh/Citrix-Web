@@ -787,6 +787,13 @@ a{
     font-weight: bold;
 }
 
+section h5
+{
+    text-align: center;
+    font-size: 30px;
+    color: red;
+}
+
 .starting
 {
     background-color: white;
@@ -826,13 +833,6 @@ a{
     background-color: white;
 }
 
-.require h5
-{
-    text-align: center;
-    font-size: 30px;
-    color: red;
-}
-
 .require p
 {
     font-size: 16px;
@@ -862,13 +862,6 @@ input.form-check-input {
     padding: 4% 0 7% 0;
 }
 
-.type h5
-{
-    text-align: center;
-    font-size: 30px;
-    color: red;
-}
-
 .type p
 {
     text-align: left;
@@ -884,6 +877,30 @@ input.form-check-input {
 .type .press7
 {
     text-align: center;
+    margin-top: 7%;
+}
+
+.details
+{
+    padding: 5% 0;
+    text-align: center;
+    background-color: white;
+}
+
+.details .wrapper
+{
+    margin-top: 5%;
+}
+
+.details .form-control
+{
+    margin: auto;
+    width: 80%;
+    padding: 0.60rem .75rem;
+}
+
+.details .press8
+{
     margin-top: 7%;
 }
 
@@ -1168,6 +1185,11 @@ input.form-check-input {
 .type
 {
     padding: 10% 0;
+}
+
+.details .press8
+{
+    margin-top: 10%;
 }
 
 
