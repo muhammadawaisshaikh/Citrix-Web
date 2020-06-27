@@ -1147,9 +1147,17 @@ input.form-check-input {
     padding: 0 5%;
 }
 
+.require {
+    padding: 10% 0;
+}
+
 .additional .form-control
 {
     width: 100%;
+}
+
+.details {
+    padding: 15% 0;
 }
 
    
@@ -1281,6 +1289,11 @@ input.form-check-input {
 .type
 {
     padding: 10% 0;
+}
+
+.type p 
+{
+    padding: 0 2%;
 }
 
 .details .press8
