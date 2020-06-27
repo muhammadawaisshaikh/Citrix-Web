@@ -11,9 +11,10 @@ import { Step3PersonalDetailsComponent } from './application-form/step3-personal
 import { Step4AdditionalMandatoryComponent } from './application-form/step4-additional-mandatory/step4-additional-mandatory.component';
 import { Step5CompanyDetailsComponent } from './application-form/step5-company-details/step5-company-details.component';
 import { Step6MainSiteDetailsComponent } from './application-form/step6-main-site-details/step6-main-site-details.component';
+import { Step7AdditonalSiteComponent } from './application-form/step7-additonal-site/step7-additonal-site.component';
 
 @NgModule({
-  declarations: [MainComponent, StartApplicationComponent, ApplicationFormComponent, Step1StandardsComponent, Step2TypeApplicationComponent, Step3PersonalDetailsComponent, Step4AdditionalMandatoryComponent, Step5CompanyDetailsComponent, Step6MainSiteDetailsComponent],
+  declarations: [MainComponent, StartApplicationComponent, ApplicationFormComponent, Step1StandardsComponent, Step2TypeApplicationComponent, Step3PersonalDetailsComponent, Step4AdditionalMandatoryComponent, Step5CompanyDetailsComponent, Step6MainSiteDetailsComponent, Step7AdditonalSiteComponent],
   imports: [
     CommonModule,
     StartApplicationRoutingModule
