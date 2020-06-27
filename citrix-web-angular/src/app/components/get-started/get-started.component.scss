@@ -5,11 +5,6 @@
     overflow: hidden;
 }
 
-.start .head h1
-{
-
-}
-
 .start .press12 
 {
     margin-top: 5%;
@@ -56,6 +51,80 @@
 .team .press13
 {
     margin-top: 5%;
+}
+
+.cards 
+{
+    padding: 5% 0;
+    background-color: #e8e8e8;
+}
+
+.cards .custom-card
+{
+    padding: 3% 5%;
+    margin-top: 3%;
+    border-left: 6px solid red;
+    border-top: 0;
+}
+
+.cards .text
+{
+    margin-top: 6%;
+}
+
+.cards .text p
+{
+    padding: 0 10%;
+    font-size: 19px;
+}
+
+.cards .text .press14
+{
+    margin-top: 6%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px)
+{
+
+.start
+{
+    text-align: center;
+}    
+
+.cards h5
+{
+    font-size: 25px;
+}
+
+.cards .text
+{
+    padding: 10% 0%;
+}
+
+.cards .text p
+{
+    padding: 0 5%;
+    font-size: 15px;
+}
+
+
+
 }
 
 
