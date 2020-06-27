@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { MainComponent } from './main/main.component';
+import { ApplicationFormComponent } from './application-form/application-form.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path: 'main',
     component: MainComponent
+  },
+  {
+    path: 'application-form',
+    component: ApplicationFormComponent
   }
 ];
 
