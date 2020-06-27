@@ -3,6 +3,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { MainComponent } from './main/main.component';
 import { ApplicationFormComponent } from './application-form/application-form.component';
+import { Step1StandardsComponent } from './application-form/step1-standards/step1-standards.component';
+import { Step2TypeApplicationComponent } from './application-form/step2-type-application/step2-type-application.component';
+import { Step3PersonalDetailsComponent } from './application-form/step3-personal-details/step3-personal-details.component';
+import { Step4AdditionalMandatoryComponent } from './application-form/step4-additional-mandatory/step4-additional-mandatory.component';
+import { Step5CompanyDetailsComponent } from './application-form/step5-company-details/step5-company-details.component';
+import { Step6MainSiteDetailsComponent } from './application-form/step6-main-site-details/step6-main-site-details.component';
 
 const routes: Routes = [
   {
@@ -15,7 +21,37 @@ const routes: Routes = [
   },
   {
     path: 'application-form',
-    component: ApplicationFormComponent
+    component: ApplicationFormComponent,
+    children: [
+      {
+        path: '',
+        component: Step1StandardsComponent
+      },
+      {
+        path: 'step1-standards',
+        component: Step1StandardsComponent
+      },
+      {
+        path: 'step2-type-application',
+        component: Step2TypeApplicationComponent
+      },
+      {
+        path: 'step3-personal-details',
+        component: Step3PersonalDetailsComponent
+      },
+      {
+        path: 'step4-additional-mandatory',
+        component: Step4AdditionalMandatoryComponent
+      },
+      {
+        path: 'step5-company-details',
+        component: Step5CompanyDetailsComponent
+      },
+      {
+        path: 'step6-main-site-details',
+        component: Step6MainSiteDetailsComponent
+      }
+    ]
   }
 ];
 
