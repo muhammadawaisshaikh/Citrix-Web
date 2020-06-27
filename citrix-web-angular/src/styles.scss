@@ -1,1 +1,1152 @@
-/* You can add global styles to this file, and also import other style files */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+:root {
+    --red: #ec0000;
+    --golden: #feca05;
+    --blue: #252259;
+    --white: #ffffff;
+    --black: #000000;
+    --lightgry: #f2f2f2;
+}
+
+body
+{
+    font-family: 'Roboto', sans-serif !important;
+    overflow-x: hidden;
+    margin-bottom: 0 auto;
+    background-color: var(--lightgry);
+    font-family: 'Open Sans', sans-serif;
+}
+
+p, h1 ,h2 ,h3, h4, h5, h6 {
+    margin: 0 !important;
+}
+
+.all-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.top-bar
+{
+    background-color: var(--white);
+    padding: 1% 0;
+}
+
+.top-bar .logo
+{
+    
+}
+
+.top-bar .logo span
+{
+    padding: 0 7px;
+    font-size: 16px;
+}
+
+.top-bar .logo span:hover
+{
+    color: var(--golden);
+    opacity: 0.5s;
+    transition: 0.5s;
+}
+
+.top-bar .logo img
+{
+    width: 50%;
+    height: auto;
+}
+
+.top-bar .nav
+{
+    margin-top: 4%;
+}
+
+.top-bar .nav ul
+{
+    display: flex;
+    list-style: none;
+}
+
+.top-bar .nav li a
+{ 
+    font-size: 17px;
+    padding: 0px 13px;
+    color: black;
+}
+
+.top-bar .press
+{
+    margin-top: 15%;
+}
+
+.top-bar .press a
+{
+    color:  var(--white);
+    font-size: 15px;
+    border: 1px solid var(--red);
+    background-color: var(--red);
+    border-radius: 4px;
+    padding: 12px 17px 12px 17px;
+    box-shadow: 1px 2px 3px grey;
+}
+
+.top-bar .press a:hover
+{
+    background-color:  var(--white);
+    color: var(--red);
+    opacity: 0.5s;
+    transition: 0.5s;
+}
+
+/* dropdown buttn */
+.dropdown 
+{
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a 
+{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.parent li>a:hover  .dropdown-content {display: block;}
+
+.sidenav 
+{
+    padding-top: 10%;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 70;
+    left: -100%;
+    background-color: var(--white);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidenav.active 
+{
+    left: 0;
+}
+      
+.sidenav a 
+{
+    padding: 0px 0px 0px 30px;
+    border-bottom: 1px solid #e9e9e9;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--black);
+    display: block;
+    transition: 0.3s;
+    /* text-align: center; */
+}
+      
+.sidenav a:hover 
+{
+    color: rgb(0, 0, 0);
+}
+
+/* X menu btn */
+.bar1, .bar2, .bar3 
+{
+    width: 35px;
+    height: 5px;
+    background-color: var(--black);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+  
+.change .bar1 
+  
+{
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+  
+.change .bar2 {opacity: 0;}
+  
+.change .bar3 
+{
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.toggleMenu 
+{
+    position: absolute;
+    top: 15px;
+    left: 4%;
+    z-index: 1;
+    display: none;
+}
+
+.seprator
+{
+    background-color: #707070;
+    width: 100%;
+    height: 1px;
+}
+      
+@media screen and (max-height: 450px) 
+{
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.mobile-nav
+{
+    display: none;
+}
+
+.slider
+{
+    background-color: white;
+    
+}
+
+.slider .heading 
+{
+    margin-top: 25%;
+}
+
+.slider .heading h1
+{
+    font-size: 60px;
+    color: red;
+    font-weight: 600;
+}
+
+.slider .heading h6
+{
+    font-size: 17px;
+}
+
+.slider .heading span
+{
+    color: var(--golden);
+}
+
+.slider .heading p
+{
+    font-size: 15px;
+}
+
+.slider .heading .press1
+{
+    margin-top: 7%;
+}
+
+.slider .heading .press1 a
+{
+    color: var(--white);
+    font-size: 17px;
+    border: 1px solid var(--red);
+    background-color: var(--red);
+    border-radius: 4px;
+    margin-right: 10px;
+    padding: 12px 17px 12px 17px;
+    box-shadow: 1px 2px 3px grey;
+}
+
+.slider .heading .press1 a:hover
+{ 
+    background-color:  var(--white);
+    color: var(--red);
+    opacity: 0.5s;
+    transition: 0.5s;
+}
+
+.slider .wrapper
+{
+    background-color: red;
+}
+
+.slider .wrapper .image img
+{
+    width: 80%;
+    display: block;
+    margin: auto;
+    height: auto;
+}
+
+.slider .heading .text
+{
+    margin-top: 10%;
+    /* text-align: center; */
+}
+ 
+.slider .heading .text p
+{
+    font-size: 15px;
+}
+
+.partner
+{
+    padding: 5% 0;
+}
+
+.partner h6
+{
+    text-align: center;
+    font-size: 17px;
+}
+
+.partner .image1
+{
+    margin-top: 5%;
+}
+
+.partner .image1 img
+{
+    width: 100%;
+    height: auto;
+}
+
+.partner h3
+{ 
+    text-align: center;
+    font-size: 40px;
+    padding: 5% 5% 0 5%;
+    color: red;
+}
+
+.partner p
+{
+    font-size: 18px;
+    text-align: center;
+    padding-top: 3%
+}
+
+.partner .main
+{
+    background-color: white;
+    padding: 7%;
+    margin-top: 10%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px grey;
+    border-top: 6px solid red;
+    margin: 10% 0 0 0;
+}
+
+.partner h4
+{
+    text-align: center;
+    font-size: 25px;
+    padding-top: 10%;
+}
+
+.partner .main p
+{
+    font-size: 17px;
+    text-align: unset;
+    color: gray;
+}
+
+.partner .main h5
+{
+    font-size: 20px;
+}
+
+.partner .main i
+{
+    font-size: 25px;
+    display: block;
+    margin: auto;
+}
+
+.number
+{
+    text-align: center;
+    background-color: red;
+    padding: 3% 0;
+}
+
+.number h3
+{
+    font-size: 30px;
+    color: white;
+
+}
+
+.number .main
+{
+    border-right: 2px solid var(--golden);
+}
+
+.number .main.no-border
+{
+    border-right: 0;
+}
+
+.number .main h6
+{
+    color: var(--golden);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.number .main h4
+{
+    color: white;
+    font-size: 23px;
+}
+
+.provide
+{
+    background-color: white;
+    padding: 5% 0;
+}
+
+.provide h3
+{
+    text-align: center;
+    font-size: 35px;
+    color: black;
+}
+
+.provide span
+{
+    color: gold;
+}
+
+.provide .wrapper
+{
+    height: 160px;
+    border-left: 6px solid red;
+    margin-top: 5%;
+    border: 1px solid white;
+    padding: 5% 3%;
+    margin-left: 0px;
+    border-radius: 5px;
+    box-shadow: 2px 1px 5px grey;
+}
+
+.provide .wrapper .image2 img
+{
+    width: 100%;
+    height: auto;
+}
+
+.provide .wrapper .main 
+{
+    margin-top: 4%;
+}
+
+.provide .wrapper .main h6
+{
+    font-size: 23px;
+}
+
+.provide .wrapper p
+{
+    padding-left: 3%;
+    font-size: 15px;
+}
+
+.provide .looking
+{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.provide .looking h3
+{
+    color: red;
+    font-size: 35px;
+}
+
+.provide .looking p
+{
+    color: black;
+    padding: 1% 23% 0 23%;
+}
+
+.provide .looking .press2
+{
+    margin-top: 5%;
+}
+
+.provide .looking .press2 a
+{
+    color:  var(--white);
+    font-size: 15px;
+    border: 1px solid var(--red);
+    background-color: var(--red);
+    border-radius: 4px;
+    padding: 12px 17px 12px 17px;
+    box-shadow: 1px 2px 3px grey;
+}
+
+.provide .looking .press2 a:hover
+{
+    background-color:  var(--white);
+    color: var(--red);
+    opacity: 0.5s;
+    transition: 0.5s;
+}
+
+.explore
+{
+    padding: 5% 0;
+}
+
+.explore h3
+{
+    text-align: center;
+    font-size: 35px;
+}
+
+.explore .main
+{
+    margin-top: 15%;
+    height: 520px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 1px 5px grey;
+}
+
+.explore .main .image3 img
+{ 
+    width: 100%;
+    height: 250px;
+}
+
+.explore .main .wrappers
+{
+    padding: 8% 5%;
+}
+
+.explore .main .wrappers h6
+{
+    color: red;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.explore .main .wrappers h4
+{
+    padding-top: 10%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.explore .main .wrappers .press2
+{
+    margin-top: 15%;
+}
+
+.explore .main .wrappers .press2 a
+{
+    color: var(--white);
+    font-size: 14px;
+    border: 1px solid var(--red);
+    background-color: var(--red);
+    border-radius: 4px;
+    padding: 10px 17px 10px 17px;
+    box-shadow: 1px 2px 3px grey;
+}
+
+.explore .main .wrappers .press2 a:hover
+{
+    background-color:  var(--white);
+    color: var(--red);
+    opacity: 0.5s;
+    transition: 0.5s;
+}
+
+.explore .press3
+{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.explore .press3 a
+{
+    color: var(--white);
+    font-size: 16px;
+    border: 1px solid var(--red);
+    background-color: var(--red);
+    border-radius: 4px;
+    padding: 12px 17px 12px 17px;
+    box-shadow: 1px 2px 3px grey;
+}
+
+.explore .press3 a:hover
+{
+    
+    background-color:  var(--white);
+    color: var(--red);
+    opacity: 0.5s;
+    transition: 0.5s;
+}
+
+.ready
+{
+    background-color: red;
+    position: relative;
+    padding: 5% 0;
+}
+
+.ready .first
+{
+    padding: 0% 0 0 0;
+}
+
+.ready .first h6
+{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.ready .first p
+{
+    color: white;
+    font-size: 18px;
+    padding: 10px 15% 0 0%;
+}
+
+.ready .first .press4
+{
+    margin-top: 8%;
+}
+
+.ready .first .press4 a
+{
+    color: var(--white);
+    font-size: 17px;
+    border: 1px solid var(--golden);
+    background-color: var(--golden);
+    border-radius: 4px;
+    padding: 12px 19px 12px 20px;
+    /* box-shadow: 1px 2px 3px grey; */
+    font-weight: bold;
+}
+
+.ready .first .press4 a:hover
+{
+    background-color:  var(--white);
+    color: var(--red);
+    opacity: 0.5s;
+    transition: 0.5s;
+}
+
+.ready .image4 img
+{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: -115%;
+    right: 0;
+}
+
+.tansfer
+{
+    background-color: white;
+    padding: 5% 0;
+}
+
+.tansfer a
+{
+    border-bottom: 3px solid;
+    color: var(--black);
+    font-size: 25px;
+}
+
+.tansfer a:hover
+{
+    color: var(--golden);
+    opacity: 0.5s;
+    transition: 0.5s;
+}
+
+.tansfer p
+{
+    font-size: 17px;
+}
+
+.footer
+{
+    padding: 2% 0;
+}
+
+.footer .commitment h6
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer .commitment ul
+{
+    list-style: none;
+    padding: 0;
+}
+
+.footer .commitment li
+{
+    padding-top: 10px;
+}
+
+.footer .commitment a
+{
+    color: black;
+    font-size: 14px;
+}
+
+.footer .commitment a:hover
+{
+    color: var(--red);
+    opacity: 0.5s;
+    transition: 0.5s;
+}
+
+.footer .icon
+{
+    float: right;
+    margin-top: 20%;
+    
+}
+
+.footer .icon i
+{ 
+    font-size: 20px;
+    border: 2px solid;
+    border-radius: 4px;
+    padding: 5px 8px;
+    margin: 0 5px;
+}
+
+.footer .icon i:hover
+{
+    background-color:  var(--white);
+    color: var(--red);
+    opacity: 0.5s;
+    transition: 0.5s;
+}
+
+.last
+{
+    background-color: red;
+    padding: 1% 0;
+}
+
+.last .left  a 
+{
+    color: var(--white);
+    font-size: 15px;
+    padding-right: 9px;
+}
+
+.last .right
+{
+    float: right;
+}
+
+.last .right p
+{
+    color: var(--white);
+    font-size: 15px;
+}
+
+.banner
+{
+    background-color: red;
+    text-align: center;
+    padding: 10% 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.banner h1
+{
+    font-size: 55px;
+    padding: 0 10%;
+    color: white;
+    font-weight: bold;
+}
+
+.starting
+{
+    background-color: white;
+    padding: 5% 0;
+}
+
+.starting .main h3
+{
+    font-size: 35px;
+    color: red;
+}
+
+.starting .main  span 
+{
+    color: var(--golden);
+    font-weight: bold;
+}
+
+.starting .main p
+{
+    font-size: 15px;
+}
+
+.starting h3
+{
+    font-size: 30px;
+}
+
+.starting .press5
+{
+    margin-top: 5%;
+}
+
+.require
+{
+    padding: 5% 0;
+    background-color: white;
+}
+
+.require h5
+{
+    text-align: center;
+    font-size: 30px;
+    color: red;
+}
+
+.require p
+{
+    font-size: 16px;
+}
+
+.form-check-label
+{
+    font-size: 17px;
+    padding-left: 10px;
+}
+
+input.form-check-input {
+    width: 20px; 
+    height: 20px; 
+}
+
+.require .press6
+{
+    text-align: center;
+    margin-top: 7%;
+}
+
+
+
+
+
+
+
+
+.red-btn
+{
+    color:  var(--white);
+    font-size: 15px;
+    border: 1px solid var(--red);
+    background-color: var(--red);
+    border-radius: 4px;
+    padding: 12px 17px 12px 17px;
+    box-shadow: 1px 2px 3px grey;
+}
+
+.red-btn:hover
+{
+    background-color:  var(--white);
+    color: var(--red);
+    opacity: 0.5s;
+    transition: 0.5s;
+}
+
+
+
+@media screen and (max-width: 1920px)
+{
+
+}
+
+@media screen and (max-width: 1366px)
+{
+    
+}
+
+@media screen and (max-width: 768px)
+{
+
+.top-bar .logo img 
+{
+    width: 90px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.top-bar .logo span
+{
+    display: none;
+}
+
+.toggleMenu {
+    display: block;
+}
+
+.mobile-nav
+{
+    display: block;
+}
+
+.top-bar .nav
+{
+    display: none;
+}
+
+.top-bar .press a
+{
+    display: none;
+}
+
+.top-bar .mobile-nav .press a
+{
+    display: block;
+}
+
+.slider .heading 
+{
+    margin: 10% 0;
+    text-align: center;
+}
+
+.slider .heading h1
+{
+    font-size: 52px;
+}
+
+.slider .wrapper
+{
+    display: none;
+}
+
+.partner
+{
+    padding: 8% 0;
+}
+
+.partner h3
+{
+    font-size: 35px;
+    padding: 5% 3% 0 3%;
+}
+
+.partner p
+{
+    font-size: 15px;
+    padding-top: 5%;
+}
+
+.partner .main h5
+{
+    font-size: 14px;
+}
+
+.partner .main p
+{
+    font-size: 15px;
+}
+
+.partner .main i
+{
+    font-size: 18px;
+}
+
+.provide h3
+{
+    font-size: 30px;
+}
+
+.ready .image4
+{
+    display: none;
+}
+
+.tansfer p {
+    font-size: 15px;
+}
+
+.footer .icon {
+    float: right;
+    margin-top: 6%;
+}
+
+.banner h1
+{
+    font-size: 40px;
+    padding: 0 5%;
+}
+
+   
+}
+
+@media screen and (max-width: 600px)
+{
+
+.number
+{
+    padding: 5% 0;
+}
+
+.number .main
+{
+    border-right: 0;
+}
+
+.provide
+{
+    padding: 8% 0;
+}
+
+.provide h3
+{
+    font-size: 25px;
+}
+
+.provide .wrapper
+{
+    width: 100%;
+    height: auto;
+}
+
+.provide .wrapper .main
+{
+    margin-top: 7%;
+}
+
+.provide .looking h3
+{
+    font-size: 23px;
+}
+
+.provide .looking p
+{
+    padding: 1% 6% 0 6%;
+}
+
+.provide .looking .press2
+{
+    margin-top: 10%;
+}
+
+.explore
+{
+    padding: 8% 0;
+}
+
+.explore h3
+{
+    font-size: 27px;
+}
+
+.ready
+{
+    padding: 8% 0;
+    text-align: center;
+}
+
+.ready .first h6
+{
+    font-size: 25px;
+}
+
+.ready .first p
+{
+    font-size: 17px;
+    padding: 10px 0% 0 0%;
+}
+
+.ready .first .press4
+{
+    margin-top: 10%;
+}
+
+.tansfer
+{
+    padding: 7% 0;
+    text-align: center;
+}
+
+.footer
+{
+    padding: 7% 0;
+}
+
+.banner
+{
+    padding: 15% 0;
+}
+
+.banner h1
+{
+    font-size: 30px;
+    padding: 0 5%;
+}
+
+.starting 
+{
+    padding: 10% 0;
+}
+
+.starting .main h3
+{
+    font-size: 30px;
+}
+
+.starting h3
+{
+    font-size: 22px;
+}
+
+.starting .press5
+{
+    margin-top: 10%;
+}
+
+
+
+
+
+
+}
+
+@media screen and (max-width: 425px)
+{
+    
+}
+
+@media screen and (max-width: 375px)
+{
+    
+}
+
+
