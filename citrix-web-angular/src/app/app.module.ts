@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { HomepageModule } from './components/homepage/homepage.module';
+import { GetStartedModule } from './components/get-started/get-started.module';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 
@@ -17,7 +18,8 @@ import { FooterComponent } from './layout/footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HomepageModule
+    HomepageModule,
+    GetStartedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

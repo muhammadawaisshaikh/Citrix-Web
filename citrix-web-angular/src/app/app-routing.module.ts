@@ -9,6 +9,10 @@ const routes: Routes = [
   {
     path: 'start-application',
     loadChildren: () => import('./components/start-application/start-application.module').then(m => m.StartApplicationModule)
+  },
+  {
+    path: 'get-started',
+    loadChildren: () => import('./components/get-started/get-started.module').then(m => m.GetStartedModule)
   }
 ];
 
