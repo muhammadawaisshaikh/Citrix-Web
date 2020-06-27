@@ -12,6 +12,7 @@ import { Step6MainSiteDetailsComponent } from './application-form/step6-main-sit
 import { Step7AdditonalSiteComponent } from './application-form/step7-additonal-site/step7-additonal-site.component';
 import { Step8AdditionalSite2Component } from './application-form/step8-additional-site2/step8-additional-site2.component';
 import { Step9AdditonalSite3Component } from './application-form/step9-additonal-site3/step9-additonal-site3.component';
+import { SubContractorsComponent } from './application-form/sub-contractors/sub-contractors.component';
 
 const routes: Routes = [
   {
@@ -65,6 +66,10 @@ const routes: Routes = [
       {
         path: 'step9-additonal-site3',
         component: Step9AdditonalSite3Component
+      },
+      {
+        path: 'sub-contractors',
+        component: SubContractorsComponent
       }
     ]
   }
