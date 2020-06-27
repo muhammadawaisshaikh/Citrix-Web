@@ -5,6 +5,10 @@ const routes: Routes = [
   {
     path: 'homepage',
     loadChildren: () => import('./components/homepage/homepage.module').then(m => m.HomepageModule)
+  },
+  {
+    path: 'start-application',
+    loadChildren: () => import('./components/start-application/start-application.module').then(m => m.StartApplicationModule)
   }
 ];
 
