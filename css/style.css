@@ -957,6 +957,24 @@ input.form-check-input {
     text-align: center;
 }
 
+.site 
+{
+    background-color: white;
+    padding: 5% 0;
+}
+
+.site .press11
+{
+    margin-top: 7%;
+    text-align: center;
+}
+
+.site .form-control
+{
+    width: 100%;
+    padding: 0.60rem .75rem;
+}
+
 
 
 
