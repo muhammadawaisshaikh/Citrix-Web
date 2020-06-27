@@ -787,6 +787,13 @@ a{
     font-weight: bold;
 }
 
+section h5
+{
+    text-align: center;
+    font-size: 30px;
+    color: red;
+}
+
 .starting
 {
     background-color: white;
@@ -826,13 +833,6 @@ a{
     background-color: white;
 }
 
-.require h5
-{
-    text-align: center;
-    font-size: 30px;
-    color: red;
-}
-
 .require p
 {
     font-size: 16px;
@@ -855,6 +855,147 @@ input.form-check-input {
     margin-top: 7%;
 }
 
+.type
+{
+    text-align: center;
+    background-color: white;
+    padding: 4% 0 7% 0;
+}
+
+.type p
+{
+    text-align: left;
+}
+
+.type .form-radio
+{
+    border: 1px solid gold;
+    background-color: gold;
+    padding: 5% 0px;
+}
+
+.type .press7
+{
+    text-align: center;
+    margin-top: 7%;
+}
+
+.details
+{
+    padding: 5% 0;
+    text-align: center;
+    background-color: white;
+}
+
+.details .wrapper
+{
+    margin-top: 5%;
+}
+
+.details .form-control
+{
+    margin: auto;
+    width: 80%;
+    padding: 0.60rem .75rem;
+}
+
+.details .press8
+{
+    margin-top: 7%;
+}
+
+.additional
+{
+    background-color: white;
+    padding: 5% 0;
+}
+
+.additional .form-control
+{
+    width: 70%;
+    padding: 0.60rem .75rem;
+}
+
+.company
+{
+    background-color: white;
+    padding: 5% 0;
+}
+
+.company .main 
+{
+    margin-top: 5%;
+}
+
+.company h6
+{
+    padding: 0 10%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.company .form-control
+{
+    width: 100%;
+    padding: 0.60rem .75rem;
+}
+
+.company .press9
+{
+    margin-top: 5%;
+}
+
+.company .wrapper
+{
+    margin-top: 6%;
+}
+
+.company .press10
+{
+    margin-top: 7%;
+    text-align: center;
+}
+
+.site 
+{
+    background-color: white;
+    padding: 5% 0;
+}
+
+.site .main
+{
+    padding-top: 5%;
+}
+
+.site .main .press10
+{
+    margin-top: 3%;
+}
+
+.site .second
+{
+    padding-top: 5%;
+}
+ 
+.site .second .form-control
+{
+    width: 100%;
+    padding: 0.60rem .75rem;
+}
+
+.site .press11
+{
+    margin-top: 7%;
+    text-align: center;
+}
+
+.site .form-control
+{
+    width: 100%;
+    padding: 0.60rem .75rem;
+}
+
 
 
 
@@ -869,7 +1010,7 @@ input.form-check-input {
     border: 1px solid var(--red);
     background-color: var(--red);
     border-radius: 4px;
-    padding: 12px 17px 12px 17px;
+    padding: 12px 5% 12px 5%;
     box-shadow: 1px 2px 3px grey;
 }
 
@@ -1006,6 +1147,11 @@ input.form-check-input {
     padding: 0 5%;
 }
 
+.additional .form-control
+{
+    width: 100%;
+}
+
    
 }
 
@@ -1128,6 +1274,26 @@ input.form-check-input {
 }
 
 .starting .press5
+{
+    margin-top: 10%;
+}
+
+.type
+{
+    padding: 10% 0;
+}
+
+.details .press8
+{
+    margin-top: 10%;
+}
+
+.company .press9
+{
+    margin-top: 15%;
+}
+
+.company .wrapper
 {
     margin-top: 10%;
 }
