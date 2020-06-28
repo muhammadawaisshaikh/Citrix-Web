@@ -17,6 +17,10 @@ const routes: Routes = [
   {
     path: 'sector',
     loadChildren: () => import('./components/sector/sector.module').then(m => m.SectorModule)
+  },
+  {
+    path: 'contact',
+    loadChildren: () => import('./components/contact/contact.module').then(m => m.ContactModule)
   }
 ];
 

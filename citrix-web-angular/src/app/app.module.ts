@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 
 import { HomepageModule } from './components/homepage/homepage.module';
 import { GetStartedModule } from './components/get-started/get-started.module';
+import { ContactModule } from './components/contact/contact.module';
 import { SectorModule } from './components/sector/sector.module';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
@@ -21,7 +22,8 @@ import { FooterComponent } from './layout/footer/footer.component';
     AppRoutingModule,
     HomepageModule,
     GetStartedModule,
-    SectorModule
+    SectorModule,
+    ContactModule
   ],
   providers: [],
   bootstrap: [AppComponent]
