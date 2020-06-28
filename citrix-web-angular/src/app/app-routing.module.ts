@@ -13,6 +13,10 @@ const routes: Routes = [
   {
     path: 'get-started',
     loadChildren: () => import('./components/get-started/get-started.module').then(m => m.GetStartedModule)
+  },
+  {
+    path: 'sector',
+    loadChildren: () => import('./components/sector/sector.module').then(m => m.SectorModule)
   }
 ];
 

@@ -1,0 +1,124 @@
+.start
+{
+    background-color: red;
+    padding: 7% 0;
+    overflow: hidden;
+}
+
+.start .head h1
+{
+    color: var(--white);
+    font-weight: bold;
+}
+
+.start p
+{
+    color: var(--white);
+    font-size: 16px;
+}
+
+.start .press12 
+{
+    margin-top: 5%;
+}
+
+.start .press12 a
+{
+    background-color: var(--golden);
+    color: var(--black);
+    box-shadow: unset;
+}
+
+.start .wrapper .image
+{
+    position: absolute;
+    top: -15%;
+    right: 0px;
+    width: 90%;
+}
+
+.start .wrapper .image img
+{
+    width: 100%;
+}
+
+.team
+{
+    background-color: white;
+    padding: 5% 0;
+    // text-align: center;
+}
+
+.team .content h5
+{
+    padding: 0 17%;
+    font-size: 40px;
+}
+
+.team .content p
+{
+    padding: 0 15%;
+    font-size: 18px;
+}
+
+.team .main i
+{
+    font-size: 25px;
+    display: block;
+    margin: auto;
+}
+
+.custom-card
+{
+    height: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px)
+{
+.team .content h5
+{
+    padding: 0 10%;
+    font-size: 30px;
+}
+
+.team .content p
+{
+    padding: 0 10%;
+    font-size: 15px;
+}
+
+}
+
+
+@media screen and (max-width: 600px)
+{
+
+.team .content h5
+{
+    padding: 0 5%;
+    font-size: 20px;
+}
+
+.team .content p
+{
+    padding: 0 5%;
+    font-size: 13px;
+}
+
+}
