@@ -1,0 +1,77 @@
+.start
+{
+    background-color: red;
+    padding: 7% 0;
+    overflow: hidden;
+}
+
+.start .head h1
+{
+    color: var(--white);
+    font-weight: bold;
+}
+
+.start p
+{
+    color: var(--white);
+    font-size: 20px;
+}
+
+.start .wrapper .image
+{
+    position: absolute;
+    top: -80%;
+    right: 0;
+    width: 80%;
+}
+
+.start .wrapper .image img
+{
+    width: 100%;
+}
+
+.text
+{
+    background-color: white;
+    padding: 3% 0 5% 0;
+}
+
+.text .network
+{
+    
+}
+
+.text .context
+{
+    margin-top: 7%;
+}
+
+.text .context h1
+{
+    color: red;
+    font-size: 30px;
+}
+
+.text .context p
+{
+    font-size: 16px;
+    color: #585858;
+}
+
+.text .context .image8
+{
+    margin-top: 5%;
+}
+
+.text .context .image8 img
+{
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+
+.text .network .press14
+{
+    margin-top: 10%;
+}
+
