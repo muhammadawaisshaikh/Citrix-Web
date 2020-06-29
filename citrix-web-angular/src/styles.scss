@@ -76,6 +76,12 @@ a{
     color: black;
 }
 
+button, input, optgroup, select, textarea
+{
+    background-color: white;
+    border: 0;
+}
+
 .top-bar .press
 {
     margin-top: 15%;
