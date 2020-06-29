@@ -21,17 +21,31 @@
               <div class="col-lg-7">
                   <div class="nav">
                       <ul>
-                          <li><a href="#">Get Started</a></li>
+                          <li><a routerLink="/get-started">Get Started</a></li>
                           
                           <div class="btn-group">
                             <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Certifications
                             </button>
                             <div class="dropdown-menu">
-                              <a class="dropdown-item" routerLink="/contact">Find a consultant</a>
-                              <a class="dropdown-item" routerLink="/contact">Training and Workshops</a>
-                              <a class="dropdown-item" routerLink="/contact">Certificate checker</a>
-                              <a class="dropdown-item" routerLink="/contact">Transfer your certification</a>
+                              <a class="dropdown-item" routerLink="/contact">SIA ACS</a>
+                              <a class="dropdown-item" routerLink="/contact">CCAS Passport </a>
+                              <a class="dropdown-item" routerLink="/contact">NSI Gold </a>
+                              <a class="dropdown-item" routerLink="/contact">ISO 9001</a>
+                              <a class="dropdown-item" routerLink="/contact">ISO 14001</a>
+                              <a class="dropdown-item" routerLink="/contact">ISO 45001</a>
+                              <a class="dropdown-item" routerLink="/contact">Investor in people </a>
+                              <a class="dropdown-item" routerLink="/contact">Safecontractor</a>
+                              <a class="dropdown-item" routerLink="/contact">Constructionline</a>
+                              <a class="dropdown-item" routerLink="/contact">Builder’s Profile </a>
+                              <a class="dropdown-item" routerLink="/contact">Achilles</a>
+                              <a class="dropdown-item" routerLink="/contact">SISQS</a>
+                              <a class="dropdown-item" routerLink="/contact">SSIP</a>
+                              <a class="dropdown-item" routerLink="/contact">CHAS</a>
+                              <a class="dropdown-item" routerLink="/contact">SMAS</a>
+                              <a class="dropdown-item" routerLink="/contact"> Competent health and safety Advisor</a>
+                              <a class="dropdown-item" routerLink="/contact">CDM Coordinator</a>
+                              <a class="dropdown-item" routerLink="/contact">Fire Risk assessment </a>
                             </div>
                           </div>
 
@@ -40,7 +54,8 @@
                                 About
                             </button>
                             <div class="dropdown-menu">
-                              <a class="dropdown-item" routerLink="/about">International Locations</a>
+                                <a class="dropdown-item" routerLink="/about">About Us</a>
+                              <a class="dropdown-item" href="#">International Locations</a>
                             </div>
                           </div>
 
@@ -61,15 +76,53 @@
               <!-- mobile side-menu -->
               <div class="mobile-nav">
                   <div id="mySidenav" class="sidenav">
-                      <a href="#">Get Started</a>
-                      <a href="#">Certifications</a>
-                      <a href="#">About</a>
-                      <a href="#">Resources</a>
-                      <a href="#">Sectors</a>
-                      <a href="#">Contact</a>
+                      <a routerLink="/get-started" onclick="toggleMenu(this)">Get Started</a>
+                      <!-- <a href="#">Certifications</a> -->
+                      <a>
+                        <div class="btn-group">
+                            <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Certifications
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" routerLink="/contact">SIA ACS</a>
+                                <a class="dropdown-item" routerLink="/contact">CCAS Passport </a>
+                                <a class="dropdown-item" routerLink="/contact">NSI Gold </a>
+                                <a class="dropdown-item" routerLink="/contact">ISO 9001</a>
+                                <a class="dropdown-item" routerLink="/contact">ISO 14001</a>
+                                <a class="dropdown-item" routerLink="/contact">ISO 45001</a>
+                                <a class="dropdown-item" routerLink="/contact">Investor in people </a>
+                                <a class="dropdown-item" routerLink="/contact">Safecontractor</a>
+                                <a class="dropdown-item" routerLink="/contact">Constructionline</a>
+                                <a class="dropdown-item" routerLink="/contact">Builder’s Profile </a>
+                                <a class="dropdown-item" routerLink="/contact">Achilles</a>
+                                <a class="dropdown-item" routerLink="/contact">SISQS</a>
+                                <a class="dropdown-item" routerLink="/contact">SSIP</a>
+                                <a class="dropdown-item" routerLink="/contact">CHAS</a>
+                                <a class="dropdown-item" routerLink="/contact">SMAS</a>
+                                <a class="dropdown-item" routerLink="/contact"> Competent health and safety Advisor</a>
+                                <a class="dropdown-item" routerLink="/contact">CDM Coordinator</a>
+                                <a class="dropdown-item" routerLink="/contact">Fire Risk assessment </a>
+                            </div>
+                        </div>
+                      </a>
+                      
+                      <a>
+                        <div class="btn-group">
+                            <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                About
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" routerLink="/about">About Us</a>
+                              <a class="dropdown-item" href="#">International Locations</a>
+                            </div>
+                        </div>
+                      </a>
+                      <a routerLink="/latest-news">Resources</a>
+                      <a routerLink="/sector">Sectors</a>
+                      <a routerLink="/contact">Contact</a>
 
-                      <div class="press container">
-                          <a href="#">Start Application</a>
+                      <div class="press container text-center">
+                          <a routerLink="/start-application">Start Application</a>
                       </div>
                   </div>
               </div>

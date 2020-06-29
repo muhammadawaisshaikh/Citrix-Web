@@ -76,6 +76,7 @@ a{
     color: black;
 }
 
+
 button, input, optgroup, select, textarea
 {
     background-color: white;
@@ -154,7 +155,7 @@ button, input, optgroup, select, textarea
       
 .sidenav a 
 {
-    padding: 0px 0px 0px 30px;
+    padding: 10px 0px 10px 30px;
     border-bottom: 1px solid #e9e9e9;
     text-decoration: none;
     font-size: 18px;
@@ -1036,6 +1037,17 @@ input.form-check-input {
         color: var(--red);
     }
 }
+
+.dropdown-toggle:focus 
+{
+  outline: none;
+  box-shadow: none;
+}
+
+
+
+
+
 
 
 
