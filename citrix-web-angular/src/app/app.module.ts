@@ -8,6 +8,7 @@ import { HomepageModule } from './components/homepage/homepage.module';
 import { GetStartedModule } from './components/get-started/get-started.module';
 import { ContactModule } from './components/contact/contact.module';
 import { AboutModule} from './components/about/about.module';
+import { LatestNewsModule} from './components/latest-news/latest-news.module';
 import { SectorModule } from './components/sector/sector.module';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
@@ -25,7 +26,8 @@ import { FooterComponent } from './layout/footer/footer.component';
     GetStartedModule,
     SectorModule,
     ContactModule,
-    AboutModule
+    AboutModule,
+    LatestNewsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

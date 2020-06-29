@@ -25,6 +25,10 @@ const routes: Routes = [
   {
     path: 'about',
     loadChildren: () => import('./components/about/about.module').then(m => m.AboutModule)
+  },
+  {
+    path: 'latest-news',
+    loadChildren: () => import('./components/latest-news/latest-news.module').then(m => m.LatestNewsModule)
   }
 ];
 
