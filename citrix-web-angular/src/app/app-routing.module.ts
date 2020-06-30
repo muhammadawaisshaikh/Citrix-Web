@@ -29,6 +29,10 @@ const routes: Routes = [
   {
     path: 'latest-news',
     loadChildren: () => import('./components/latest-news/latest-news.module').then(m => m.LatestNewsModule)
+  },
+  {
+    path: 'terms-conditions',
+    loadChildren: () => import('./components/terms-conditions/terms-conditions.module').then(m => m.TermsConditionsModule)
   }
 ];
 

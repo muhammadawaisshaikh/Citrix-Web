@@ -10,6 +10,7 @@ import { ContactModule } from './components/contact/contact.module';
 import { AboutModule} from './components/about/about.module';
 import { LatestNewsModule} from './components/latest-news/latest-news.module';
 import { SectorModule } from './components/sector/sector.module';
+import { TermsConditionsModule } from './components/terms-conditions/terms-conditions.module';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 
@@ -27,7 +28,8 @@ import { FooterComponent } from './layout/footer/footer.component';
     SectorModule,
     ContactModule,
     AboutModule,
-    LatestNewsModule
+    LatestNewsModule,
+    TermsConditionsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
