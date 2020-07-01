@@ -1,0 +1,54 @@
+.banner
+{
+    background-color: red;
+    text-align: center;
+    padding: 7% 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.banner h1
+{
+    font-size: 55px;
+    padding: 0 10%;
+    color: white;
+    font-weight: bold;
+}
+
+section h5
+{
+    font-size: 25px;
+    color: red;
+}
+
+.business
+{
+    background-color: white;
+    padding: 5%;
+}
+
+.business p
+{
+    color: #656565;
+    font-size: 16px;
+}
+
+.business span
+{
+    font-weight: bold;
+    color: red;
+}
+
+
+
+
+@media screen and (max-width: 600px)
+{
+
+.banner h1
+{
+    font-size: 35px;
+    padding: 0 5%;
+}  
+
+}
