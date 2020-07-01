@@ -12,6 +12,7 @@ import { LatestNewsModule} from './components/latest-news/latest-news.module';
 import { SectorModule } from './components/sector/sector.module';
 import { TermsConditionsModule } from './components/terms-conditions/terms-conditions.module';
 import { ClientsCharterComplaintsModule } from './components/clients-charter-complaints/clients-charter-complaints.module';
+import { ImpartialityStatementModule } from './components/impartiality-statement/impartiality-statement.module';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 
@@ -31,7 +32,8 @@ import { FooterComponent } from './layout/footer/footer.component';
     AboutModule,
     LatestNewsModule,
     TermsConditionsModule,
-    ClientsCharterComplaintsModule
+    ClientsCharterComplaintsModule,
+    ImpartialityStatementModule
   ],
   providers: [],
   bootstrap: [AppComponent]

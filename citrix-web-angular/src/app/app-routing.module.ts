@@ -38,6 +38,11 @@ const routes: Routes = [
     path: 'clients-charter-complaints',
     loadChildren: () => import('./components/clients-charter-complaints/clients-charter-complaints.module').then(m => m.ClientsCharterComplaintsModule)
   }
+  ,
+  {
+    path: 'impartiality-statement',
+    loadChildren: () => import('./components/impartiality-statement/impartiality-statement.module').then(m => m.ImpartialityStatementModule)
+  }
 ];
 
 @NgModule({
