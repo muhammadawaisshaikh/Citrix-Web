@@ -53,6 +53,10 @@ const routes: Routes = [
   {
     path: 'appeals-procedure',
     loadChildren: () => import('./components/appeals-procedure/appeals-procedure.module').then(m => m.AppealsProcedureModule)
+  },
+  {
+    path: 'business-policy-statement',
+    loadChildren: () => import('./components/business-policy-statement/business-policy-statement.module').then(m => m.BusinessPolicyStatementModule)
   }
 ];
 
