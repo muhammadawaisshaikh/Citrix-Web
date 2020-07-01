@@ -31,75 +31,75 @@ const routes: Routes = [
         component: SiaAcsComponent
       },
       {
-        path: 'sia-acs',
+        path: 'certifications/sia-acs',
         component: SiaAcsComponent
       },
       {
-        path: 'ccas-passport',
+        path: 'certifications/ccas-passport',
         component: CcasPassportComponent
       },
       {
-        path: 'nsi-gold',
+        path: 'certifications/nsi-gold',
         component: NsiGoldComponent
       },
       {
-        path: 'iso-nine-thousand-one',
+        path: 'certifications/iso-nine-thousand-one',
         component: IsoNineThousandOneComponent
       },
       {
-        path: 'iso-fourteen-thousand-one',
+        path: 'certifications/iso-fourteen-thousand-one',
         component: IsoFourteenThousandOneComponent
       },
       {
-        path: 'iso-fourty-five-thousand-one',
+        path: 'certifications/iso-fourty-five-thousand-one',
         component: IsoFourtyFiveThousandOneComponent
       },
       {
-        path: 'investor-in-people',
+        path: 'certifications/investor-in-people',
         component: InvestorInPeopleComponent
       },
       {
-        path: 'safe-contractor',
+        path: 'certifications/safe-contractor',
         component: SafeContractorComponent
       },
       {
-        path: 'construction-line',
+        path: 'certifications/construction-line',
         component: ConstructionLineComponent
       },
       {
-        path: 'builders-profile',
+        path: 'certifications/builders-profile',
         component: BuildersProfileComponent
       },
       {
-        path: 'achilles',
+        path: 'certifications/achilles',
         component: AchillesComponent
       },
       {
-        path: 'sisqs',
+        path: 'certifications/sisqs',
         component: SisqsComponent
       },
       {
-        path: 'ssip',
+        path: 'certifications/ssip',
         component: SsipComponent
       },
       {
-        path: 'chas',
+        path: 'certifications/chas',
         component: ChasComponent
       },
       {
-        path: 'smas',
+        path: 'certifications/smas',
         component: SmasComponent
       },
       {
-        path: 'competent-health-and-safety-advisor',
+        path: 'certifications/competent-health-and-safety-advisor',
         component: CompetentHealthAndSafetyAdvisorComponent
       },
       {
-        path: 'cdm-cordinator',
+        path: 'certifications/cdm-cordinator',
         component: CdmCordinatorComponent
       },
       {
-        path: 'fire-risk-aasessment',
+        path: 'certifications/fire-risk-aasessment',
         component: FireRiskAasessmentComponent
       },
     ]

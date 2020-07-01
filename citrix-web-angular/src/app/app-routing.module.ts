@@ -45,6 +45,10 @@ const routes: Routes = [
   {
     path: 'certifications',
     loadChildren: () => import('./components/certifications/certifications.module').then(m => m.CertificationsModule)
+  },
+  {
+    path: 'work-with-us',
+    loadChildren: () => import('./components/work-with-us/work-with-us.module').then(m => m.WorkWithUsModule)
   }
 ];
 
