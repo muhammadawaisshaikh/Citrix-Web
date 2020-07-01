@@ -49,6 +49,10 @@ const routes: Routes = [
   {
     path: 'work-with-us',
     loadChildren: () => import('./components/work-with-us/work-with-us.module').then(m => m.WorkWithUsModule)
+  },
+  {
+    path: 'appeals-procedure',
+    loadChildren: () => import('./components/appeals-procedure/appeals-procedure.module').then(m => m.AppealsProcedureModule)
   }
 ];
 

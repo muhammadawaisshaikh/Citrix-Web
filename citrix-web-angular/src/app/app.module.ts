@@ -14,6 +14,7 @@ import { TermsConditionsModule } from './components/terms-conditions/terms-condi
 import { ClientsCharterComplaintsModule } from './components/clients-charter-complaints/clients-charter-complaints.module';
 import { ImpartialityStatementModule } from './components/impartiality-statement/impartiality-statement.module';
 import { CertificationsModule } from './components/certifications/certifications.module';
+import { AppealsProcedureModule } from './components/appeals-procedure/appeals-procedure.module';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 
@@ -35,7 +36,8 @@ import { FooterComponent } from './layout/footer/footer.component';
     TermsConditionsModule,
     ClientsCharterComplaintsModule,
     ImpartialityStatementModule,
-    CertificationsModule
+    CertificationsModule,
+    AppealsProcedureModule
   ],
   providers: [],
   bootstrap: [AppComponent]
