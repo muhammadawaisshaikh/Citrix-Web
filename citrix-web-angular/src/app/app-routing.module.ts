@@ -33,6 +33,10 @@ const routes: Routes = [
   {
     path: 'terms-conditions',
     loadChildren: () => import('./components/terms-conditions/terms-conditions.module').then(m => m.TermsConditionsModule)
+  },
+  {
+    path: 'clients-charter-complaints',
+    loadChildren: () => import('./components/clients-charter-complaints/clients-charter-complaints.module').then(m => m.ClientsCharterComplaintsModule)
   }
 ];
 
