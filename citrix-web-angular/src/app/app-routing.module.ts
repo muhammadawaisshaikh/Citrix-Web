@@ -37,11 +37,14 @@ const routes: Routes = [
   {
     path: 'clients-charter-complaints',
     loadChildren: () => import('./components/clients-charter-complaints/clients-charter-complaints.module').then(m => m.ClientsCharterComplaintsModule)
-  }
-  ,
+  },
   {
     path: 'impartiality-statement',
     loadChildren: () => import('./components/impartiality-statement/impartiality-statement.module').then(m => m.ImpartialityStatementModule)
+  },
+  {
+    path: 'certifications',
+    loadChildren: () => import('./components/certifications/certifications.module').then(m => m.CertificationsModule)
   }
 ];
 
