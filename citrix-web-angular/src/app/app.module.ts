@@ -1,9 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { HttpClientModule }    from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { StartApplicationModule } from './components/start-application/start-application.module';
 import { HomepageModule } from './components/homepage/homepage.module';
 import { GetStartedModule } from './components/get-started/get-started.module';
 import { ContactModule } from './components/contact/contact.module';
@@ -28,7 +32,10 @@ import { FooterComponent } from './layout/footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule,
     HomepageModule,
+    StartApplicationModule,
     GetStartedModule,
     SectorModule,
     ContactModule,

@@ -11,30 +11,32 @@
                   <p class="mt-5">Type of application*</p>
               </div>
 
-              <div class="col-lg-6 col-6 py-4">
-                  <div class="form-radio">
-                      <input class="form-check-input" type="radio" name="exampleRadios" value="option1" checked>
-                      <label class="form-check-label" for="exampleRadios1">
-                          New
-                      </label>
-                    </div>
-              </div>
-
-              <div class="col-lg-6 col-6 py-4">
-                  <div class="form-radio">
-                      <input class="form-check-input" type="radio" name="exampleRadios" value="option1" checked>
-                      <label class="form-check-label" for="exampleRadios1">
-                          Renewal
-                      </label>
-                    </div>
-              </div>
+              <form [formGroup]="step2Form">
+                <div class="col-lg-6 col-6 py-4">
+                    <div class="form-radio">
+                        <input class="form-check-input" type="radio" value="new" name="application_type" checked formControlName="application_type">
+                        <label class="form-check-label">
+                            New
+                        </label>
+                      </div>
+                </div>
+  
+                <div class="col-lg-6 col-6 py-4">
+                    <div class="form-radio">
+                        <input class="form-check-input" type="radio" value="renewal" name="application_type" formControlName="application_type">
+                        <label class="form-check-label">
+                            Renewal
+                        </label>
+                      </div>
+                </div>
+              </form>
 
               <p>If Transfer, please send in your latest Certificate(s) and Report(s)</p>
 
               <div class="col-lg-12 col-12 ">
                   <div class="press7">
                       <a class="red-btn mr-3" routerLink="/start-application/application-form">Previous</a>  
-                      <a class="red-btn" href="/start-application/application-form/step3-personal-details">Next</a>
+                      <a class="red-btn" (click)="proceed()">Next</a>
                   </div>
               </div>
 

@@ -11,140 +11,143 @@
               </div>
           </div>
 
-          <div class="row mt-3"> 
-              <div class="col-md-6 col-12">
-                  <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" value="option1">
-                      <label class="form-check-label" for="inlineCheckbox1">SIA ACS</label>
-                  </div>
-              </div>
-
-              <div class="col-md-6 col-12">
-                  <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" value="option1">
-                      <label class="form-check-label" for="inlineCheckbox1">CCAS Passport </label>
-                  </div>
-              </div>
-
-              <div class="col-md-6 col-12">
-                  <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" value="option1">
-                      <label class="form-check-label" for="inlineCheckbox1">NSI Gold</label>
-                  </div>
-              </div>
-
-              <div class="col-md-6 col-12">
-                  <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" value="option1">
-                      <label class="form-check-label" for="inlineCheckbox1">ISO 9001</label>
-                  </div>
-              </div>
-
-              <div class="col-md-6 col-12">
-                  <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" value="option1">
-                      <label class="form-check-label" for="inlineCheckbox1">ISO 14001</label>
-                  </div>
-              </div>
-
-              <div class="col-md-6 col-12">
-                  <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" value="option1">
-                      <label class="form-check-label" for="inlineCheckbox1">ISO 45001</label>
-                  </div>
-              </div>
-
-              <div class="col-md-6 col-12">
-                  <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" value="option1">
-                      <label class="form-check-label" for="inlineCheckbox1">Investor in people</label>
-                  </div>
-              </div>
-
-              <div class="col-md-6 col-12">
-                  <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" value="option1">
-                      <label class="form-check-label" for="inlineCheckbox1">Safecontractor</label>
-                  </div>
-              </div>
-
-              <div class="col-md-6 col-12">
-                  <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" value="option1">
-                      <label class="form-check-label" for="inlineCheckbox1">Constructionline</label>
-                  </div>
-              </div>
-
-              <div class="col-md-6 col-12">
-                  <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" value="option1">
-                      <label class="form-check-label" for="inlineCheckbox1">Builder’s Profile </label>
-                  </div>
-              </div>
-
-              <div class="col-md-6 col-12">
-                  <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" value="option1">
-                      <label class="form-check-label" for="inlineCheckbox1">Achilles </label>
-                  </div>
-              </div>
-
-              <div class="col-md-6 col-12">
-                  <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" value="option1">
-                      <label class="form-check-label" for="inlineCheckbox1">SISQS</label>
-                  </div>
-              </div>
-
-              <div class="col-md-6 col-12">
-                  <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" value="option1">
-                      <label class="form-check-label" for="inlineCheckbox1">SSIP</label>
-                  </div>
-              </div>
-
-              <div class="col-md-6 col-12">
-                  <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" value="option1">
-                      <label class="form-check-label" for="inlineCheckbox1">CHAS</label>
-                  </div>
-              </div>
-
-              <div class="col-md-6 col-12">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" value="option1">
-                    <label class="form-check-label" for="inlineCheckbox1">SMAS</label>
+          <form [formGroup]="step1Form">
+            <div class="row mt-3"> 
+                <div class="col-md-6 col-12">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="SIA ACS" formControlName="sia_acs">
+                        <label class="form-check-label" >SIA ACS</label>
+                    </div>
                 </div>
-            </div>
-
-            <div class="col-md-6 col-12">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" value="option1">
-                    <label class="form-check-label" for="inlineCheckbox1">Competent health and safety Advisor </label>
+  
+                <div class="col-md-6 col-12">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="CCAS Passport" formControlName="ccas_passport">
+                        <label class="form-check-label" >CCAS Passport </label>
+                    </div>
                 </div>
-            </div>
-
-            <div class="col-md-6 col-12">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" value="option1">
-                    <label class="form-check-label" for="inlineCheckbox1">CDM Coordinator </label>
+  
+                <div class="col-md-6 col-12">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="NSI Gold" formControlName="nsi_gold">
+                        <label class="form-check-label" >NSI Gold</label>
+                    </div>
                 </div>
-            </div>
-
-            <div class="col-md-6 col-12">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" value="option1">
-                    <label class="form-check-label" for="inlineCheckbox1">Fire Risk assessment </label>
+  
+                <div class="col-md-6 col-12">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="ISO 9001" formControlName="iso_nine_thousand_one">
+                        <label class="form-check-label" >ISO 9001</label>
+                    </div>
                 </div>
-            </div>
-
-              <div class="col-12">
-                 <div class="press6">
-                      <a class="red-btn" routerLink="/start-application/application-form//step2-type-application">Next</a>
-                 </div>
+  
+                <div class="col-md-6 col-12">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="ISO 14001" formControlName="iso_fourteen_thousand_one">
+                        <label class="form-check-label" >ISO 14001</label>
+                    </div>
+                </div>
+  
+                <div class="col-md-6 col-12">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="ISO 45001" formControlName="iso_fourty_five_thousand_one">
+                        <label class="form-check-label" >ISO 45001</label>
+                    </div>
+                </div>
+  
+                <div class="col-md-6 col-12">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="Investor in people" formControlName="investor_in_people">
+                        <label class="form-check-label" >Investor in people</label>
+                    </div>
+                </div>
+  
+                <div class="col-md-6 col-12">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="Safecontractor" formControlName="safe_contractor">
+                        <label class="form-check-label" >Safecontractor</label>
+                    </div>
+                </div>
+  
+                <div class="col-md-6 col-12">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="Constructionline" formControlName="construction_line">
+                        <label class="form-check-label" >Constructionline</label>
+                    </div>
+                </div>
+  
+                <div class="col-md-6 col-12">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="Builder’s Profile" formControlName="builders_profile">
+                        <label class="form-check-label" >Builder’s Profile </label>
+                    </div>
+                </div>
+  
+                <div class="col-md-6 col-12">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="Achilles" formControlName="achilles">
+                        <label class="form-check-label" >Achilles </label>
+                    </div>
+                </div>
+  
+                <div class="col-md-6 col-12">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="SISQS" formControlName="sisqs">
+                        <label class="form-check-label" >SISQS</label>
+                    </div>
+                </div>
+  
+                <div class="col-md-6 col-12">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="SSIP" formControlName="ssip">
+                        <label class="form-check-label" >SSIP</label>
+                    </div>
+                </div>
+  
+                <div class="col-md-6 col-12">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="CHAS" formControlName="chas">
+                        <label class="form-check-label" >CHAS</label>
+                    </div>
+                </div>
+  
+                <div class="col-md-6 col-12">
+                  <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" value="SMAS" formControlName="smas">
+                      <label class="form-check-label" >SMAS</label>
+                  </div>
               </div>
-
-          </div>
+  
+              <div class="col-md-6 col-12">
+                  <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" value="Competent health and safety Advisor" formControlName="competent_health_and_safety_advisor">
+                      <label class="form-check-label" >Competent health and safety Advisor </label>
+                  </div>
+              </div>
+  
+              <div class="col-md-6 col-12">
+                  <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" value="CDM Coordinator" formControlName="cdm_cordinator">
+                      <label class="form-check-label" >CDM Coordinator </label>
+                  </div>
+              </div>
+  
+              <div class="col-md-6 col-12">
+                  <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" value="Fire Risk assessment" formControlName="fire_risk_aasessment">
+                      <label class="form-check-label" >Fire Risk assessment </label>
+                  </div>
+              </div>
+  
+                <div class="col-12">
+                   <div class="press6">
+                        <a class="red-btn" (click)="proceed()">Next</a>
+                   </div>
+                </div>
+  
+            </div>
+          </form>
+          
       </div>
   </div>
 </section>
