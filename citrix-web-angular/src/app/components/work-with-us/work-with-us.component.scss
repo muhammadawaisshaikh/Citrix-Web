@@ -1,0 +1,108 @@
+.banner
+{
+    background-color: red;
+    text-align: center;
+    padding: 7% 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.banner h1
+{
+    font-size: 55px;
+    padding: 0 10%;
+    color: white;
+    font-weight: bold;
+}
+
+.banner p{
+    font-size: 20px;
+    color: white;
+    padding: 0 5%;
+} 
+
+section h5
+{
+    font-size: 30px;
+    color: red;
+}
+
+.work
+{
+    background-color: white;
+    padding: 7%;
+}
+
+.work p
+{
+    color: #656565;
+    font-size: 16px;
+}
+
+.work .image
+{
+    margin-top: 5%;
+}
+
+.work .image img
+{
+    width: 100%;
+    height: auto;
+}
+
+.work span
+{
+    font-weight: bold;
+    color: red;
+}
+
+.work .card
+{
+    margin-top: 5%;
+}
+
+.card-header
+{
+    padding: 1.75rem 1.25rem;
+}
+
+button
+{
+    color: red;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px)
+{
+
+.banner h1
+{
+    font-size: 35px;
+    padding: 0 5%;
+} 
+
+.banner p{
+    font-size: 15px;
+} 
+
+button
+{
+   font-size: 14px;
+}
+
+}
