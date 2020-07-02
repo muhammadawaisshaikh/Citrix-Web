@@ -7,6 +7,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { StartApplicationModule } from './components/start-application/start-application.module';
 import { HomepageModule } from './components/homepage/homepage.module';
 import { GetStartedModule } from './components/get-started/get-started.module';
 import { ContactModule } from './components/contact/contact.module';
@@ -32,6 +33,7 @@ import { FooterComponent } from './layout/footer/footer.component';
     HttpClientModule,
     ReactiveFormsModule,
     HomepageModule,
+    StartApplicationModule,
     GetStartedModule,
     SectorModule,
     ContactModule,
