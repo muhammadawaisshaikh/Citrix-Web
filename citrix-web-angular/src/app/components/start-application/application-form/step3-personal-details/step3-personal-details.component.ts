@@ -55,10 +55,6 @@ export class Step3PersonalDetailsComponent implements OnInit {
     this.step1Data = this.dataHoldingApplication.getStep1Data();
     this.step2Data = this.dataHoldingApplication.getStep2Data();
     this.step3Data = this.dataHoldingApplication.getStep3Data();
-
-    // console.log(this.step1Data);
-    // console.log(this.step2Data);
-    // console.log(this.step3Data);
     
     let params = {
       achilles: this.step1Data.achilles,
@@ -86,9 +82,6 @@ export class Step3PersonalDetailsComponent implements OnInit {
       position: this.step3Data.position,
       your_name: this.step3Data.your_name,
     }
-
-    // console.log(params);
-    
 
     this.applicationService.addApplication(params).subscribe(
       (res)=> {
