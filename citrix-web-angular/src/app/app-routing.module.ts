@@ -4,50 +4,51 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {
     path: 'homepage',
-    loadChildren: () => import('./components/homepage/homepage.module').then(m => m.HomepageModule)
+    loadChildren: './components/homepage/homepage.module#HomepageModule'
   },
   {
     path: 'start-application',
-    loadChildren: () => import('./components/start-application/start-application.module').then(m => m.StartApplicationModule)
+    loadChildren: './components/start-application/start-application.module#StartApplicationModule'
   },
   {
     path: 'get-started',
-    loadChildren: () => import('./components/get-started/get-started.module').then(m => m.GetStartedModule)
+    loadChildren: './components/get-started/get-started.module#GetStartedModule'
   },
   {
     path: 'sector',
-    loadChildren: () => import('./components/sector/sector.module').then(m => m.SectorModule)
+    loadChildren: './components/sector/sector.module#SectorModule'
   },
   {
     path: 'contact',
-    loadChildren: () => import('./components/contact/contact.module').then(m => m.ContactModule)
+    loadChildren: './components/contact/contact.module#ContactModule'
   },
   {
     path: 'about',
-    loadChildren: () => import('./components/about/about.module').then(m => m.AboutModule)
+    loadChildren: './components/about/about.module#AboutModule'
   },
   {
     path: 'latest-news',
-    loadChildren: () => import('./components/latest-news/latest-news.module').then(m => m.LatestNewsModule)
+    loadChildren: './components/latest-news/latest-news.module#LatestNewsModule'
   },
   {
     path: 'terms-conditions',
-    loadChildren: () => import('./components/terms-conditions/terms-conditions.module').then(m => m.TermsConditionsModule)
+    loadChildren: './components/terms-conditions/terms-conditions.module#TermsConditionsModule'
   },
   {
     path: 'clients-charter-complaints',
-    loadChildren: () => import('./components/clients-charter-complaints/clients-charter-complaints.module').then(m => m.ClientsCharterComplaintsModule)
+    loadChildren: './components/clients-charter-complaints/clients-charter-complaints.module#ClientsCharterComplaintsModule'
   },
   {
     path: 'impartiality-statement',
-    loadChildren: () => import('./components/impartiality-statement/impartiality-statement.module').then(m => m.ImpartialityStatementModule)
+    loadChildren: './components/impartiality-statement/impartiality-statement.module#ImpartialityStatementModule'
   },
   {
     path: 'certifications',
-    loadChildren: () => import('./components/certifications/certifications.module').then(m => m.CertificationsModule)
+    loadChildren: './components/certifications/certifications.module#CertificationsModule'
   },
   {
     path: 'work-with-us',
+<<<<<<< Updated upstream
     loadChildren: () => import('./components/work-with-us/work-with-us.module').then(m => m.WorkWithUsModule)
   },
   {
@@ -57,6 +58,9 @@ const routes: Routes = [
   {
     path: 'business-policy-statement',
     loadChildren: () => import('./components/business-policy-statement/business-policy-statement.module').then(m => m.BusinessPolicyStatementModule)
+=======
+    loadChildren: './components/work-with-us/work-with-us.module#WorkWithUsModule'
+>>>>>>> Stashed changes
   }
 ];
 
