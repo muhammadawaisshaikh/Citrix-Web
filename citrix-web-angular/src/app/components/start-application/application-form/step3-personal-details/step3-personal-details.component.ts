@@ -35,7 +35,7 @@ export class Step3PersonalDetailsComponent implements OnInit {
       position: [''],
       contact: [''],
       email: [''],
-      how_did_ou_hear: [''],
+      how_did_you_hear: [''],
     });
   }
 
@@ -47,7 +47,7 @@ export class Step3PersonalDetailsComponent implements OnInit {
       position: this.step3Form.value.position,
       contact: this.step3Form.value.contact,
       email: this.step3Form.value.email,
-      how_did_ou_hear: this.step3Form.value.how_did_ou_hear,
+      how_did_you_hear: this.step3Form.value.how_did_you_hear,
     }
     this.dataHoldingApplication.setStep3Data(data);
 
@@ -56,9 +56,9 @@ export class Step3PersonalDetailsComponent implements OnInit {
     this.step2Data = this.dataHoldingApplication.getStep2Data();
     this.step3Data = this.dataHoldingApplication.getStep3Data();
 
-    console.log(this.step1Data);
-    console.log(this.step2Data);
-    console.log(this.step3Data);
+    // console.log(this.step1Data);
+    // console.log(this.step2Data);
+    // console.log(this.step3Data);
     
     let params = {
       achilles: this.step1Data.achilles,
@@ -82,22 +82,27 @@ export class Step3PersonalDetailsComponent implements OnInit {
       company_name: this.step3Data.company_name,
       contact: this.step3Data.contact,
       email: this.step3Data.email,
-      how_did_ou_hear: this.step3Data.how_did_ou_hear,
+      how_did_you_hear: this.step3Data.how_did_you_hear,
       position: this.step3Data.position,
       your_name: this.step3Data.your_name,
     }
 
-    console.log(params);
+    // console.log(params);
     
 
-    // this.applicationService.addApplication(params).subscribe(
-    //   (res)=> {
-    //     console.log(res);
-    //   },
-    //   (error)=> {
-    //     console.log(error);
-    //   }
-    // );
+    this.applicationService.addApplication(params).subscribe(
+      (res)=> {
+        console.log(res);
+
+        if (res) {
+          alert('Application Submitted Successfully');
+          this.router.navigateByUrl('/');
+        }
+      },
+      (error)=> {
+        console.log(error);
+      }
+    );
 
   }
 

@@ -37,15 +37,15 @@
         if ($application_type != "" || $company_name != "" || $your_name != "" || $position != "" || $contact != "" || $email != "" || $how_did_you_hear != "") 
         {
             $addStandardTypeQuery = "INSERT INTO standard_type(sia_acs, nsi_gold, iso_nine_thousand_one, iso_fourteen_thousand_one, iso_fourty_five_thousand_one, investor_in_people, safe_contractor, construction_line, builders_profile, achilles, sisqs, ssip, chas, smas, competent_health_and_safety_advisor, cdm_cordinator, fire_risk_aasessment) 
-                VALUES('$standard_type', '$application_type', '$company_name', '$your_name', '$position', '$contact', '$email', '$how_did_you_hear')";
+                VALUES('$sia_acs', '$nsi_gold', '$iso_nine_thousand_one', '$iso_fourteen_thousand_one', '$iso_fourty_five_thousand_one', '$investor_in_people', '$safe_contractor', '$construction_line', '$builders_profile', '$achilles', '$sisqs', '$ssip', '$chas', '$smas', '$competent_health_and_safety_advisor', '$cdm_cordinator', '$fire_risk_aasessment')";
 
             $addApplicationQuery = "INSERT INTO applications(standard_type_id_fk, application_type, company_name, your_name, position, contact, email, how_did_you_hear) 
                 VALUES(LAST_INSERT_ID(), '$application_type', '$company_name', '$your_name', '$position', '$contact', '$email', '$how_did_you_hear')";
 
-            $addApplication = mysqli_query($con, $addApplicationQuery);
             $addStandardType = mysqli_query($con, $addStandardTypeQuery);
+            $addApplication = mysqli_query($con, $addApplicationQuery);
 
-            if(!$addApplication || !$addStandardType)
+            if(!$addStandardType || !$addApplication)
             {
                 die('Error : ' . mysqli_error($con));
             }

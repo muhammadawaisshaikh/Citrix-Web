@@ -25,24 +25,24 @@ export class Step1StandardsComponent implements OnInit {
 
   step1FormInit() {
     this.step1Form = this.fb.group({
-      sia_acs: [false],
-      ccas_passport: [false],
-      nsi_gold: [false],
-      iso_nine_thousand_one: [false],
-      iso_fourteen_thousand_one: [false],
-      iso_fourty_five_thousand_one: [false],
-      investor_in_people: [false],
-      safe_contractor: [false],
-      construction_line: [false],
-      builders_profile: [false],
-      achilles: [false],
-      sisqs: [false],
-      ssip: [false],
-      chas: [false],
-      smas: [false],
-      competent_health_and_safety_advisor: [false],
-      cdm_cordinator: [false],
-      fire_risk_aasessment: [false]
+      sia_acs: [''],
+      ccas_passport: [''],
+      nsi_gold: [''],
+      iso_nine_thousand_one: [''],
+      iso_fourteen_thousand_one: [''],
+      iso_fourty_five_thousand_one: [''],
+      investor_in_people: [''],
+      safe_contractor: [''],
+      construction_line: [''],
+      builders_profile: [''],
+      achilles: [''],
+      sisqs: [''],
+      ssip: [''],
+      chas: [''],
+      smas: [''],
+      competent_health_and_safety_advisor: [''],
+      cdm_cordinator: [''],
+      fire_risk_aasessment: ['']
     });
   }
 
