@@ -1,0 +1,155 @@
+.start
+{
+    background-color: var(--white);
+    padding: 7% 0;
+    overflow: hidden;
+}
+
+.start .head h1
+{
+    color: var(--red);
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.start .head p
+{
+    font-size: 16px;
+    color: var(--black);
+}
+
+.start .press12,.main .press12
+{
+    margin-top: 7%;
+}
+
+.start .wrapper .image
+{
+    position: absolute;
+    top: -40%;
+    right: 0;
+    width: 70%;
+}
+
+.start .wrapper .image img
+{
+    width: 100%;
+    height: auto;
+}
+
+.main
+{
+    background-color: #f1eded;
+    padding: 5% 0 10% 0;
+}
+
+.main a
+{
+    color: black;
+    font-weight: bold;
+}
+
+.main .customers h4
+{
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 5%;
+    
+}
+
+.main .images
+{
+    margin-top: 5%;
+}
+
+.main .images img
+{
+    width: 70%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.main .wrapper
+{
+    padding: 10% 5%;
+    border-radius: 2px;
+    height: auto;
+    border-top: 5px solid red;
+    box-shadow: 0px 0px 5px #565656;
+}
+
+.main .wrapper p
+{
+    font-size: 16px;
+}
+
+.main .wrapper span,.customers span
+{
+    color: red;
+    font-weight: bold;
+}
+
+.banner p
+{
+    color: white;
+}
+
+// main-classes
+section h5
+{
+    font-size: 30px;
+    color: red;
+}
+
+.red-btn
+{
+    color:  var(--white);
+    font-size: 15px;
+    border: 1px solid var(--red);
+    background-color: var(--red);
+    border-radius: 4px;
+    padding: 12px 5% 12px 5%;
+    box-shadow: 1px 2px 3px grey;
+}
+
+.red-btn:hover
+{
+    background-color:  var(--white);
+    color: var(--red);
+    opacity: 0.5s;
+    transition: 0.5s;
+}
+
+
+// @media
+@media screen and (max-width: 768px)
+{
+
+.start
+{
+    text-align: center;
+} 
+
+.start .wrapper .image
+{
+   display: none;
+}
+
+.main .wrapper
+{
+    display: none;
+}
+
+.main .images img
+{
+    width: 100%;
+}
+
+}
+
+
+@media screen and (max-width: 600px)
+{
+
+}
