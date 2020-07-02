@@ -48,19 +48,16 @@ const routes: Routes = [
   },
   {
     path: 'work-with-us',
-<<<<<<< Updated upstream
-    loadChildren: () => import('./components/work-with-us/work-with-us.module').then(m => m.WorkWithUsModule)
+    loadChildren: './components/work-with-us/work-with-us.module#WorkWithUsModule'
   },
   {
     path: 'appeals-procedure',
-    loadChildren: () => import('./components/appeals-procedure/appeals-procedure.module').then(m => m.AppealsProcedureModule)
+    loadChildren: './components/appeals-procedure/appeals-procedure.module#AppealsProcedureModule'
   },
   {
     path: 'business-policy-statement',
-    loadChildren: () => import('./components/business-policy-statement/business-policy-statement.module').then(m => m.BusinessPolicyStatementModule)
-=======
-    loadChildren: './components/work-with-us/work-with-us.module#WorkWithUsModule'
->>>>>>> Stashed changes
+    loadChildren: './components/business-policy-statement/business-policy-statement.module#BusinessPolicyStatementModule'
+    
   }
 ];
 
