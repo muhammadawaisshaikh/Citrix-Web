@@ -8,7 +8,24 @@
         
 		$dataJson = json_decode($data);
                 
-		$standard_type = $dataJson->standard_type;
+        $sia_acs = $dataJson->sia_acs;
+        $nsi_gold = $dataJson->nsi_gold;
+        $iso_nine_thousand_one = $dataJson->iso_nine_thousand_one;
+        $iso_fourteen_thousand_one = $dataJson->iso_fourteen_thousand_one;
+        $iso_fourty_five_thousand_one = $dataJson->iso_fourty_five_thousand_one;
+        $investor_in_people = $dataJson->investor_in_people;
+        $safe_contractor = $dataJson->safe_contractor;
+        $construction_line = $dataJson->construction_line;
+        $builders_profile = $dataJson->builders_profile;
+        $achilles = $dataJson->achilles;
+        $sisqs = $dataJson->sisqs;
+        $ssip = $dataJson->ssip;
+        $chas = $dataJson->chas;
+        $smas = $dataJson->smas;
+        $competent_health_and_safety_advisor = $dataJson->competent_health_and_safety_advisor;
+        $cdm_cordinator = $dataJson->cdm_cordinator;
+        $fire_risk_aasessment = $dataJson->fire_risk_aasessment;
+
         $application_type = $dataJson->application_type;
         $company_name = $dataJson->company_name;
         $your_name = $dataJson->your_name;
@@ -17,14 +34,18 @@
         $email = $dataJson->email;
         $how_did_you_hear = $dataJson->how_did_you_hear;
 
-        if ($standard_type != "" || $application_type != "" || $company_name != "" || $your_name != "" || $position != "" || $contact != "" || $email != "" || $how_did_you_hear != "") 
+        if ($application_type != "" || $company_name != "" || $your_name != "" || $position != "" || $contact != "" || $email != "" || $how_did_you_hear != "") 
         {
-            $addApplicationQuery = "INSERT INTO applications(standard_type, application_type, company_name, your_name, position, contact, email, how_did_you_hear) 
+            $addStandardTypeQuery = "INSERT INTO standard_type(sia_acs, nsi_gold, iso_nine_thousand_one, iso_fourteen_thousand_one, iso_fourty_five_thousand_one, investor_in_people, safe_contractor, construction_line, builders_profile, achilles, sisqs, ssip, chas, smas, competent_health_and_safety_advisor, cdm_cordinator, fire_risk_aasessment) 
                 VALUES('$standard_type', '$application_type', '$company_name', '$your_name', '$position', '$contact', '$email', '$how_did_you_hear')";
 
-            $addApplication = mysqli_query($con, $addApplicationQuery);
+            $addApplicationQuery = "INSERT INTO applications(standard_type_id_fk, application_type, company_name, your_name, position, contact, email, how_did_you_hear) 
+                VALUES(LAST_INSERT_ID(), '$application_type', '$company_name', '$your_name', '$position', '$contact', '$email', '$how_did_you_hear')";
 
-            if(!$addApplication)
+            $addApplication = mysqli_query($con, $addApplicationQuery);
+            $addStandardType = mysqli_query($con, $addStandardTypeQuery);
+
+            if(!$addApplication || !$addStandardType)
             {
                 die('Error : ' . mysqli_error($con));
             }
